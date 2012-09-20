@@ -93,10 +93,42 @@ body {
 .circle {
 	margin: 0 auto;
 	background: $g;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  -webkit-animation: cloudrgb 20s infinite;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	-webkit-animation: cloudrgb 20s infinite;
+}
+
+/* Impress */
+
+.impress {
+	margin: 0 auto;
+	background: $r;
+	width: 200px;
+	height: 200px;
+	background-image: -webkit-radial-gradient(center center, circle contain, $r 0%, black 100%);
+	display: table;
+	-webkit-transition: all .5s ease-in-out;
+	
+	a {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 2rem;
+		color: darken($r, 20%);
+		text-shadow: 1px 1px 1px lighten($r, 10%);
+		-webkit-transition: all .5s ease-in-out;
+		
+		&:hover {
+			-webkit-transform: scale(1.0, 1.0);
+		}
+	}
+	
+	&:hover {
+		-webkit-transform: scale(1.2, 1.2);
+	}
 }
 
 /* Radial */
@@ -228,7 +260,7 @@ body {
 	}
 }
 
-@-webkit-keyframes cloudgradient {
+@-webkit-keyframes cloudgradient { /* No Worky */
 	0% {
 		background-image: -webkit-radial-gradient(center center, circle contain, $g 80%, $g 85%, black 100%);
 	}
