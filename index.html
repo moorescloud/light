@@ -5,6 +5,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
 	<meta charset="utf-8" />
 
@@ -74,13 +75,19 @@
 	</div>
 
 	<div class="row">
-		<div class="pulse"></div>
+		<div class="pulse_opacity"></div>
 		<div class="three columns offset-by-six">
 			<p>A smoother CSS radial gradient with color stops at zero and 100 percent, animating the opacity to make a pulse.</p>
 		</div>
 	</div>
-
-	<!-- Included JS Files (Uncompressed) -->
+	
+	<div class="row">
+		<div class="pulse_scale"></div>
+		<div class="three columns offset-by-three">
+			<p>The same CSS radial gradient with color stops at zero and 100 percent, animating transformation of scale to make a pulse.</p>
+		</div>
+	</div>
+	
 	<script src="javascripts/foundation/jquery.js"></script>
 	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
 	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
@@ -94,7 +101,7 @@
 	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
 	<script src="javascripts/foundation/jquery.placeholder.js"></script>
 
-  <!-- Application Javascript, safe to override -->
-  <script src="javascripts/foundation/app.js"></script>
+	<script src="javascripts/foundation/app.js"></script>
+	
 </body>
 </html>

@@ -93,13 +93,22 @@ body {
 
 /* Pulse */
 
-.pulse {
+.pulse_opacity {
 	margin: 0 auto;
 	background: $m;
 	width: 200px;
 	height: 200px;
 	background-image: -webkit-radial-gradient(center center, circle contain, $m 0%, black 100%);
-	-webkit-animation: pulse 3s ease-out infinite;
+	-webkit-animation: pulse_opacity 5s ease-out infinite;
+}
+
+.pulse_scale {
+	margin: 0 auto;
+	background: $y;
+	width: 200px;
+	height: 200px;
+	background-image: -webkit-radial-gradient(center center, circle contain, $y 0%, black 100%);
+	-webkit-animation: pulse_scale 5s ease infinite;
 }
 
 /* Rings */
@@ -144,7 +153,19 @@ body {
 
 /* Animations */
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes pulse_scale {
+	0% {
+		-webkit-transform: scale(0, 0);
+	}
+	50% {
+		-webkit-transform: scale(1, 1);
+	}
+	100% {
+		-webkit-transform: scale(0, 0);
+	}
+}
+
+@-webkit-keyframes pulse_opacity {
 	0% {
 		opacity: 0;
 	}
