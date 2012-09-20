@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>MooresLights™</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="row striplight">
+		<div class="two columns g"></div>
+		<div class="two columns y"></div>
+		<div class="two columns r"></div>
+		<div class="two columns m"></div>
+		<div class="two columns b"></div>
+		<div class="two columns c"></div>
+	</div>
+
+	<div class="row">
+		<div class="six columns centered">
+			<h1 class="hide">CloudLight™</h1>
+			<img src="../images/cloudlight_transparent_1200.png">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="circle"></div>
+		<div class="three columns offset-by-three">
+			<p>A circle made of pure CSS, cycling the background colour through red, green and blue using CSS3 animations.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="radial"></div>
+		<div class="three columns offset-by-six">
+			<p>CSS radial gradients, seemingly impossible to animate colour changes because it’s rendered as an image.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="ring_rgb">
+			<div class="ring_g"></div>
+			<div class="ring_b"></div>
+			<div class="ring_r"></div>
+		</div>
+		<div class="three columns offset-by-three">
+			<p>There is no magic here, this is a demonstration of a technique we won’t use: overlaying opaque rgba() colors.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="pulse"></div>
+		<div class="three columns offset-by-six">
+			<p>A smoother CSS radial gradient with color stops at zero and 100 percent, animating the opacity to make a pulse.</p>
+		</div>
+	</div>
+
+	<!-- Included JS Files (Uncompressed) -->
+	<script src="javascripts/foundation/jquery.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="javascripts/foundation/jquery.placeholder.js"></script>
+
+  <!-- Application Javascript, safe to override -->
+  <script src="javascripts/foundation/app.js"></script>
+</body>
+</html>

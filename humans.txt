@@ -1,0 +1,9 @@
+# www.humanstxt.org
+
+## MooresLights
+
+  Standards: HTML5, CSS3, JavaScript
+  Components: jQuery, Orbit, Reveal
+  Software: Sublime Text 2, Git, Beanstalk
+  Hardware: Retina MacBook Pro, GridServer from MediaTemple
+  People: Mark Pesce, Paul Bridgestock, Daniel James Lynch
