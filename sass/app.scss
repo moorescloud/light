@@ -41,6 +41,12 @@
 
 /* @3Easy */
 
+/* Layout  */
+
+.intro {
+	padding-bottom: 75px;
+}
+
 /* Color Variables */
 
 $g: #00ff00;
@@ -93,7 +99,7 @@ body {
 	width: 200px;
 	height: 200px;
 	background-image: -webkit-radial-gradient(center center, circle contain, $m 0%, black 100%);
-	-webkit-animation: pulse 2s ease-out infinite;
+	-webkit-animation: pulse 3s ease-out infinite;
 }
 
 /* Rings */
