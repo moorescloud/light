@@ -4298,7 +4298,7 @@ body {
 }
 /* line 124, ../sass/app.scss */
 .impress a:hover {
-  -webkit-transform: scale(1, 1);
+  -webkit-transform: scale(0.85, 0.85);
 }
 /* line 129, ../sass/app.scss */
 .impress:hover {
