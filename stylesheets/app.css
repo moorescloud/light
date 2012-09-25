@@ -4230,83 +4230,113 @@ body, p {
 a {
   color: #ffffff;
 }
-/* line 41, ../sass/app.scss */
+/* line 40, ../sass/app.scss */
 a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* Rows & Columns  */
-/* line 49, ../sass/app.scss */
+/* Colors */
+/* line 55, ../sass/app.scss */
+body {
+  background: black url(../images/lights.png) repeat-y center -5%;
+  height: 10000px;
+}
+
+/* line 60, ../sass/app.scss */
 .row {
-  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 64, ../sass/app.scss */
+.no-rgba .row {
+  /* 	background: url(../images/black-gradient.png) repeat; */
+}
+
+/* Product */
+/* line 70, ../sass/app.scss */
+.product {
+  background: lime;
+  width: 100%;
+  -webkit-animation: cloudrgb 15s infinite;
+}
+/* line 74, ../sass/app.scss */
+.product img {
+  width: 100%;
+}
+
+@-webkit-keyframes cloudrgb {
+  /* line 80, ../sass/app.scss */
+  0% {
+    background: lime;
+  }
+
+  /* line 83, ../sass/app.scss */
+  33.333333% {
+    background: red;
+  }
+
+  /* line 86, ../sass/app.scss */
+  66.666666% {
+    background: blue;
+  }
+}
+
+/* Rows & Columns  */
+/* line 93, ../sass/app.scss */
+.row {
+  margin-bottom: 12px;
   padding-top: 15px;
   padding-left: 35px;
   padding-right: 35px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 .row.logo {
   margin-bottom: 0;
   padding: 0;
   border-radius: 0;
 }
 
-/* line 63, ../sass/app.scss */
+/* line 107, ../sass/app.scss */
 .row.intro {
   padding-top: 0;
-  border-radius: 0 0 20px 20px;
-}
-
-/* Colors */
-/* line 81, ../sass/app.scss */
-body {
-  background: black url(../images/lights.png) repeat-y center center;
-}
-
-/* line 85, ../sass/app.scss */
-.row {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* line 89, ../sass/app.scss */
-.no-rgba .row {
-  /* 	background: url(../images/black.png) repeat; */
+  border-radius: 0 0 10px 10px;
 }
 
 /* Nav */
-/* line 95, ../sass/app.scss */
+/* line 118, ../sass/app.scss */
 .nav {
   background: #4a4a4a;
   height: 50px;
   border-radius: 0;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 .nav .row {
   background: none;
 }
 
-/* line 105, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 .nav ul li {
-  padding: 0 12px;
   font-family: Arvo, sans-serif;
   font-size: 1.5rem;
   color: #0d0d0d;
   list-style: none;
   float: left;
 }
-/* line 112, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 .nav ul li a {
+  padding: 0 12px;
   color: #0d0d0d;
 }
-/* line 114, ../sass/app.scss */
+/* line 137, ../sass/app.scss */
 .nav ul li a:hover {
   text-decoration: none;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 .nav ul li.up {
   background: url(../images/up.png) no-repeat left top;
   width: 35px;
