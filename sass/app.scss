@@ -68,23 +68,43 @@ body {
 /* Product */
 
 .product {
-	background: $g;
+	background: #000000;
 	width: 100%;
-	-webkit-animation: cloudrgb 15s infinite;
+	position: relative;
 	img {
-		width: 100%;
+		margin: 0 auto;
+		background: $r;
+		display: block;
+		-webkit-animation: cloudrgb 20s infinite 3s alternate;
 	}
+	a {
+		background: url(../images/down.png) no-repeat 0 0;
+		width: 51px;
+		height: 51px;
+		position: absolute;
+		left: 50%;
+		bottom: 20%;
+	}
+}
+
+.down {
+	position: absolute;
+	left: 50%;
+	bottom: 1em;
 }
 
 @-webkit-keyframes cloudrgb {
 	0% {
-		background: $g;
+		background: $r;
 	}
 	33.333333% {
-		background: $r;
+		background: $g;
 	}
 	66.666666% {
 		background: $b;
+	}
+	100% {
+		background: $r;
 	}
 }
 
