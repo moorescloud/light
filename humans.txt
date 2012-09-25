@@ -6,4 +6,4 @@
   Components: jQuery, Orbit, Reveal
   Software: Sublime Text 2, Git, Beanstalk
   Hardware: Retina MacBook Pro, GridServer from MediaTemple
-  People: Mark Pesce, Paul Bridgestock, Daniel James Lynch
+  People: Mark Pesce, Daniel James Lynch, Paul Bridgestock
