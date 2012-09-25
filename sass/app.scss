@@ -8,7 +8,7 @@
 @import "foundation";
 
 /* Google */
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700);
+@import url(http://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Droid+Serif:400,700);
 
 /* 3Easy */
 
@@ -31,6 +31,10 @@ body, p {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+.intro p {
+	font-size: 1.7rem;
+}
+
 a {
 	color: #ffffff;
 	
@@ -44,7 +48,6 @@ a {
 
 .row {
 	margin-bottom: 10px;
-	background: rgba(0, 0, 0, .8);
 	padding-top: 15px;
 	padding-left: 35px;
 	padding-right: 35px;
@@ -79,6 +82,44 @@ body {
 	background: #000 url(../images/lights.png) repeat-y center center;
 }
 
+.row {
+	background: rgba(0, 0, 0, .8);
+}
+
 .no-rgba .row {
 /* 	background: url(../images/black.png) repeat; */
+}
+
+/* Nav */
+
+.nav {
+	background: #4a4a4a;
+	height: 50px;
+	border-radius: 0;
+}
+
+.nav .row {
+	background: none;
+}
+
+.nav ul li {
+	padding: 0 12px;
+	font-family: Arvo, sans-serif;
+	font-size: 1.5rem;
+	color: #0d0d0d;
+	list-style: none;
+	float: left;
+	a {
+		color: #0d0d0d;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+}
+
+.nav ul li.up {
+	background: url(../images/up.png) no-repeat left top;
+	width: 35px;
+	height: 22px;
 }
