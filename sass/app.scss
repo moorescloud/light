@@ -70,23 +70,12 @@ body {
 .product {
 	background: #000000;
 	width: 100%;
-/* 	position: relative; */
 	img {
 		margin: 0 auto;
 		background: $r;
 		display: block;
 		-webkit-animation: cloudrgb 20s infinite 3s alternate;
 	}
-/*
-	a {
-		background: url(../images/down.png) no-repeat 0 0;
-		width: 51px;
-		height: 51px;
-		position: absolute;
-		left: 50%;
-		bottom: 20%;
-	}
-*/
 }
 
 .down {
@@ -95,19 +84,43 @@ body {
 	bottom: 1em;
 }
 
-@-webkit-keyframes cloudrgb {
-	0% {
-		background: $r;
+/* Nav */
+
+.nav {
+	background: #4a4a4a;
+	border-radius: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav .row {
+	margin-bottom: 0;
+	background: none;
+}
+
+.nav ul li {
+	font-family: Arvo, sans-serif;
+	font-size: 1.5rem;
+	color: #0d0d0d;
+	list-style: none;
+	float: left;
+	a {
+		padding: 18px 12px;
+		color: #0d0d0d;
+		&:hover {
+			text-decoration: none;
+		}
 	}
-	33.333333% {
-		background: $g;
-	}
-	66.666666% {
-		background: $b;
-	}
-	100% {
-		background: $r;
-	}
+}
+
+.nav ul li.up {
+	background: url(../images/up.png) no-repeat left top;
+	width: 35px;
+	height: 22px;
+}
+
+.fixed {
+	position: fixed;
 }
 
 /* Rows & Columns  */
@@ -136,35 +149,19 @@ body {
 	
 }
 
-/* Nav */
+/* Animations */
 
-.nav {
-	background: #4a4a4a;
-	border-radius: 0;
-}
-
-.nav .row {
-	margin-bottom: 0;
-	background: none;
-}
-
-.nav ul li {
-	font-family: Arvo, sans-serif;
-	font-size: 1.5rem;
-	color: #0d0d0d;
-	list-style: none;
-	float: left;
-	a {
-		padding: 18px 12px;
-		color: #0d0d0d;
-		&:hover {
-			text-decoration: none;
-		}
+@-webkit-keyframes cloudrgb {
+	0% {
+		background: $r;
 	}
-}
-
-.nav ul li.up {
-	background: url(../images/up.png) no-repeat left top;
-	width: 35px;
-	height: 22px;
+	33.333333% {
+		background: $g;
+	}
+	66.666666% {
+		background: $b;
+	}
+	100% {
+		background: $r;
+	}
 }

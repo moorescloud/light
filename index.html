@@ -7,10 +7,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-	
+		
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-
+	
 	<title>MooresLights™</title>
 	
 	<link rel="stylesheet" href="stylesheets/app.css">
@@ -18,11 +18,11 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+	
 </head>
 <body>
 	
-	<div class="product">
+	<div class="product" id="product">
 		<a href="#nav">
 			<img src="images/product.png" alt="lightcloud product, glowing red green and blue" />
 		</a>
@@ -31,7 +31,7 @@
 	<div class="nav" id="nav">
 		<div class="row">
 			<ul class="eight columns centered">
-				<li class="up"><a href="#"></a></li>
+				<li class="up"><a href="#product"></a></li>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#apps">Apps</a></li>
 				<li><a href="#buy">Buy</a></li>
@@ -43,77 +43,81 @@
 		</div>
 	</div>
 	
-	<div class="row logo" id="home">
-		<div class="logo">
-			<img src="images/lightcloud.png" alt="lightcloud logo, red green and blue circles" />
+	<div id="sections">
+		
+		<div class="row logo" id="home">
+			<div class="logo">
+				<img src="images/lightcloud.png" alt="lightcloud logo, red green and blue circles" />
+			</div>
 		</div>
-	</div>
-	
-	<div class="row intro">
-		<div class="seven columns">
-			<h2>The light that turns you on</h2>
-			<p>Turducken rump ball tip spare ribs frankfurter, shankle venison salami turkey short loin pancetta. Drumstick tail shank, corned beef kielbasa pastrami salami.</p>
-			<p>Sirloin ham hock andouille tenderloin, prosciutto chuck shank pig. Ball tip spare ribs frankfurter.</p>
-		</div>
-		<div class="five columns">
-			<img src="images/unit.png" alt="lightcloud unit, square multi coloured light box" />
-		</div>
-	</div>
-	
-	<div class="row" id="apps">
-		<div class="twelve columns">
-			<h2>Apps</h2>
-		</div>
-		<div class="seven columns">
-			<h3>Tasty Bacon</h3>
-			<p>Bacon ipsum dolor sit amet ham pork chop strip steak pancetta spare ribs. Brisket frankfurter pancetta flank. Pork hamburger pancetta brisket sausage leberkas. Beef ribs swine short loin tongue hamburger, ground round meatloaf pork loin shank jowl pork. Pig <a href="#">pork loin</a> beef ribs tenderloin capicola frankfurter chuck short loin sausage biltong salami meatloaf.</p>
-			<p>Fatback tri-tip filet mignon leberkas pork belly ribeye kielbasa ground round drumstick pork loin pastrami meatloaf chicken t-bone shoulder.</p>
-			<p><a href="#">More &raquo;</a></p>
-		</div>
-		<div class="five columns">
-			<img src="images/render.png" alt="lightbox render, design drawings from various angles" />
-		</div>
-	</div>
-	
-	<div class="row" id="theory">
-		<div class="twelve columns">
-			<h2>Theory</h2>
-		</div>
-		<div class="seven columns">
-			<h3>Ham Sandwich</h3>
-			<p>Ribeye beef brisket, biltong pork chop turkey meatloaf chuck salami shank kielbasa frankfurter rump shoulder. Sirloin kielbasa chuck pastrami shoulder leberkas. Venison chicken tail, turkey bacon tenderloin flank jowl drumstick. Pork loin cow venison, tongue <a href="#">prosciutto shoulder</a> ball tip bresaola andouille jowl chuck pork belly tri-tip tenderloin short ribs. Bresaola tri-tip short loin ham hock cow. Kielbasa drumstick spare ribs, strip steak shoulder pancetta ham tri-tip ground round sausage jerky shankle bresaola. Sirloin jowl meatball salami drumstick.</p>
-			<p>Does your lorem ipsum text long for something a little meatier? Give our little <a href="http://baconipsum.com">piggy generator</a> a try&hellip; it’s tasty!</p>
-			<p><a href="#">More &raquo;</a></p>
-		</div>
-		<div class="five columns">
-			<img src="images/unit.png" alt="lightcloud unit, square multi coloured light box" />
-		</div>
-	</div>
-	
-	<div class="row" id="team">
-		<div class="twelve columns">
-			<h2>Team</h2>
-		</div>
-		<div class="twelve columns">
+		
+		<div class="row intro">
+			<div class="seven columns">
+				<h2>The light that turns you on</h2>
+				<p>Turducken rump ball tip spare ribs frankfurter, shankle venison salami turkey short loin pancetta. Drumstick tail shank, corned beef kielbasa pastrami salami.</p>
+				<p>Sirloin ham hock andouille tenderloin, prosciutto chuck shank pig. Ball tip spare ribs frankfurter.</p>
+			</div>
 			<div class="five columns">
-				<img src="images/mark.png" alt="mark pesce, inventor of lightcloud" />
+				<img src="images/unit.png" alt="lightcloud unit, square multi coloured light box" />
+			</div>
+		</div>
+		
+		<div class="row" id="apps">
+			<div class="twelve columns">
+				<h2>Apps</h2>
 			</div>
 			<div class="seven columns">
-				<h3>Mark Pesce</h3>
-				<p>Kielbasa ullamco qui incididunt, shankle nulla pastrami prosciutto salami ea. Drumstick corned beef reprehenderit voluptate in. Sint frankfurter sirloin id <a href="#">pancetta ham velit</a> sunt nostrud minim in proident consectetur tenderloin. Turducken qui incididunt ham ullamco chicken aliquip cow pork chop exercitation in enim adipisicing boudin.</p>
+				<h3>Tasty Bacon</h3>
+				<p>Bacon ipsum dolor sit amet ham pork chop strip steak pancetta spare ribs. Brisket frankfurter pancetta flank. Pork hamburger pancetta brisket sausage leberkas. Beef ribs swine short loin tongue hamburger, ground round meatloaf pork loin shank jowl pork. Pig <a href="#">pork loin</a> beef ribs tenderloin capicola frankfurter chuck short loin sausage biltong salami meatloaf.</p>
+				<p>Fatback tri-tip filet mignon leberkas pork belly ribeye kielbasa ground round drumstick pork loin pastrami meatloaf chicken t-bone shoulder.</p>
 				<p><a href="#">More &raquo;</a></p>
 			</div>
-		</div>
-		<div class="twelve columns">
 			<div class="five columns">
-				<img src="images/tony-off.png" alt="tony parisi, advisor to lightcloud" />
+				<img src="images/render.png" alt="lightbox render, design drawings from various angles" />
+			</div>
+		</div>
+		
+		<div class="row" id="theory">
+			<div class="twelve columns">
+				<h2>Theory</h2>
 			</div>
 			<div class="seven columns">
-				<h3>Tony Parisi</h3>
-				<p>Kielbasa ullamco qui incididunt, shankle nulla pastrami prosciutto salami ea. Drumstick corned beef reprehenderit voluptate in. Sint frankfurter sirloin id pancetta ham velit sunt nostrud minim in proident consectetur tenderloin. Turducken qui incididunt ham ullamco <a href="#">chicken aliquip</a> cow pork chop exercitation in enim adipisicing boudin.</p>
+				<h3>Ham Sandwich</h3>
+				<p>Ribeye beef brisket, biltong pork chop turkey meatloaf chuck salami shank kielbasa frankfurter rump shoulder. Sirloin kielbasa chuck pastrami shoulder leberkas. Venison chicken tail, turkey bacon tenderloin flank jowl drumstick. Pork loin cow venison, tongue <a href="#">prosciutto shoulder</a> ball tip bresaola andouille jowl chuck pork belly tri-tip tenderloin short ribs. Bresaola tri-tip short loin ham hock cow. Kielbasa drumstick spare ribs, strip steak shoulder pancetta ham tri-tip ground round sausage jerky shankle bresaola. Sirloin jowl meatball salami drumstick.</p>
+				<p>Does your lorem ipsum text long for something a little meatier? Give our little <a href="http://baconipsum.com">piggy generator</a> a try&hellip; it’s tasty!</p>
 				<p><a href="#">More &raquo;</a></p>
 			</div>
+			<div class="five columns">
+				<img src="images/unit.png" alt="lightcloud unit, square multi coloured light box" />
+			</div>
 		</div>
+		
+		<div class="row" id="team">
+			<div class="twelve columns">
+				<h2>Team</h2>
+			</div>
+			<div class="twelve columns">
+				<div class="five columns">
+					<img src="images/mark.png" alt="mark pesce, inventor of lightcloud" />
+				</div>
+				<div class="seven columns">
+					<h3>Mark Pesce</h3>
+					<p>Kielbasa ullamco qui incididunt, shankle nulla pastrami prosciutto salami ea. Drumstick corned beef reprehenderit voluptate in. Sint frankfurter sirloin id <a href="#">pancetta ham velit</a> sunt nostrud minim in proident consectetur tenderloin. Turducken qui incididunt ham ullamco chicken aliquip cow pork chop exercitation in enim adipisicing boudin.</p>
+					<p><a href="#">More &raquo;</a></p>
+				</div>
+			</div>
+			<div class="twelve columns">
+				<div class="five columns">
+					<img src="images/tony-off.png" alt="tony parisi, advisor to lightcloud" />
+				</div>
+				<div class="seven columns">
+					<h3>Tony Parisi</h3>
+					<p>Kielbasa ullamco qui incididunt, shankle nulla pastrami prosciutto salami ea. Drumstick corned beef reprehenderit voluptate in. Sint frankfurter sirloin id pancetta ham velit sunt nostrud minim in proident consectetur tenderloin. Turducken qui incididunt ham ullamco <a href="#">chicken aliquip</a> cow pork chop exercitation in enim adipisicing boudin.</p>
+					<p><a href="#">More &raquo;</a></p>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 	
 	<script src="javascripts/foundation/jquery.js"></script>

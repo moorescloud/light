@@ -4258,19 +4258,8 @@ body {
 .product {
   background: #000000;
   width: 100%;
-  /* 	position: relative; */
-  /*
-  	a {
-  		background: url(../images/down.png) no-repeat 0 0;
-  		width: 51px;
-  		height: 51px;
-  		position: absolute;
-  		left: 50%;
-  		bottom: 20%;
-  	}
-  */
 }
-/* line 74, ../sass/app.scss */
+/* line 73, ../sass/app.scss */
 .product img {
   margin: 0 auto;
   background: red;
@@ -4278,37 +4267,60 @@ body {
   -webkit-animation: cloudrgb 20s infinite 3s alternate;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 81, ../sass/app.scss */
 .down {
   position: absolute;
   left: 50%;
   bottom: 1em;
 }
 
-@-webkit-keyframes cloudrgb {
-  /* line 99, ../sass/app.scss */
-  0% {
-    background: red;
-  }
+/* Nav */
+/* line 89, ../sass/app.scss */
+.nav {
+  background: #4a4a4a;
+  border-radius: 0;
+  width: 100%;
+  z-index: 1;
+}
 
-  /* line 102, ../sass/app.scss */
-  33.333333% {
-    background: lime;
-  }
+/* line 96, ../sass/app.scss */
+.nav .row {
+  margin-bottom: 0;
+  background: none;
+}
 
-  /* line 105, ../sass/app.scss */
-  66.666666% {
-    background: blue;
-  }
+/* line 101, ../sass/app.scss */
+.nav ul li {
+  font-family: Arvo, sans-serif;
+  font-size: 1.5rem;
+  color: #0d0d0d;
+  list-style: none;
+  float: left;
+}
+/* line 107, ../sass/app.scss */
+.nav ul li a {
+  padding: 18px 12px;
+  color: #0d0d0d;
+}
+/* line 110, ../sass/app.scss */
+.nav ul li a:hover {
+  text-decoration: none;
+}
 
-  /* line 108, ../sass/app.scss */
-  100% {
-    background: red;
-  }
+/* line 116, ../sass/app.scss */
+.nav ul li.up {
+  background: url(../images/up.png) no-repeat left top;
+  width: 35px;
+  height: 22px;
+}
+
+/* line 122, ../sass/app.scss */
+.fixed {
+  position: fixed;
 }
 
 /* Rows & Columns  */
-/* line 115, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 .row {
   margin-bottom: 12px;
   padding-top: 15px;
@@ -4318,53 +4330,38 @@ body {
   border-radius: 10px;
 }
 
-/* line 124, ../sass/app.scss */
+/* line 137, ../sass/app.scss */
 .row.logo {
   margin-bottom: 0;
   padding: 0;
   border-radius: 0;
 }
 
-/* line 130, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 .row.intro {
   padding-top: 0;
   border-radius: 0 0 10px 10px;
 }
 
-/* Nav */
-/* line 141, ../sass/app.scss */
-.nav {
-  background: #4a4a4a;
-  border-radius: 0;
-}
+/* Animations */
+@-webkit-keyframes cloudrgb {
+  /* line 155, ../sass/app.scss */
+  0% {
+    background: red;
+  }
 
-/* line 146, ../sass/app.scss */
-.nav .row {
-  margin-bottom: 0;
-  background: none;
-}
+  /* line 158, ../sass/app.scss */
+  33.333333% {
+    background: lime;
+  }
 
-/* line 151, ../sass/app.scss */
-.nav ul li {
-  font-family: Arvo, sans-serif;
-  font-size: 1.5rem;
-  color: #0d0d0d;
-  list-style: none;
-  float: left;
-}
-/* line 157, ../sass/app.scss */
-.nav ul li a {
-  padding: 18px 12px;
-  color: #0d0d0d;
-}
-/* line 160, ../sass/app.scss */
-.nav ul li a:hover {
-  text-decoration: none;
-}
+  /* line 161, ../sass/app.scss */
+  66.666666% {
+    background: blue;
+  }
 
-/* line 166, ../sass/app.scss */
-.nav ul li.up {
-  background: url(../images/up.png) no-repeat left top;
-  width: 35px;
-  height: 22px;
+  /* line 164, ../sass/app.scss */
+  100% {
+    background: red;
+  }
 }

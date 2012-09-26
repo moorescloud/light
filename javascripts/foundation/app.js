@@ -1,5 +1,6 @@
 (function ($) {  
-
+	
+	// Foundation & Startup
 	$(function(){
 	
 		$(document).foundationAlerts();
@@ -8,8 +9,9 @@
 		$(document).foundationNavigation();
 		$(document).foundationCustomForms();
 		$(document).foundationMediaQueryViewer();
-		$(document).foundationTabs({callback:$.foundation.customForms.appendCustomMarkup});
-		
+		$(document).foundationTabs({
+			callback:$.foundation.customForms.appendCustomMarkup
+		});
 		$(document).tooltips();
 		$('input, textarea').placeholder();
 		
@@ -23,16 +25,35 @@
     
 	});
 	
+	// Product
 	function initLayoutFix() {
-		var win = $(window);
-		var product = $('.product');
+		var viewport = $(window);
+		var product = $('#product');
+		var haight = $(window).height();
 		function fixHeight() {
 			product.css({
-				height: Math.max(win.height(), 400) - parseInt(product.css('paddingBottom')) - parseInt(product.css('paddingTop'))});
+				height: haight
+/* 				height: Math.max(viewport.height(), 400) - parseInt(product.css('paddingBottom')) - parseInt(product.css('paddingTop')) */
+				});
 		}
-		win.bind('load resize', fixHeight);
+		viewport.bind('load resize', fixHeight);
 	}
+		
+	// Nav Fix
+	var productHeight = $('#product').outerHeight();
+	var navHeight = $('#nav').outerHeight();
+/* 	var aboveHeight = $('#product').outerHeight() + $('#nav').outerHeight; */
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > productHeight + navHeight){
+	        $('#nav').addClass('fixed').css('top','0').next().css('padding-top', navHeight);
+        } else {
+            $('#nav').removeClass('fixed').next().css('padding-top','0');
+        }
+    });
+    
+	// Nav Scroll
+	$('#nav, #product').localScroll();
 	
-	$('.nav, .product').localScroll();
-  
+	// C’est Fin!
+	
 })(jQuery);
