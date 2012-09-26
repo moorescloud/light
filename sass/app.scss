@@ -70,13 +70,14 @@ body {
 .product {
 	background: #000000;
 	width: 100%;
-	position: relative;
+/* 	position: relative; */
 	img {
 		margin: 0 auto;
 		background: $r;
 		display: block;
 		-webkit-animation: cloudrgb 20s infinite 3s alternate;
 	}
+/*
 	a {
 		background: url(../images/down.png) no-repeat 0 0;
 		width: 51px;
@@ -85,6 +86,7 @@ body {
 		left: 50%;
 		bottom: 20%;
 	}
+*/
 }
 
 .down {
@@ -115,6 +117,7 @@ body {
 	padding-top: 15px;
 	padding-left: 35px;
 	padding-right: 35px;
+	padding-bottom: 15px;
 	border-radius: 10px;
 }
 
@@ -137,11 +140,11 @@ body {
 
 .nav {
 	background: #4a4a4a;
-	height: 50px;
 	border-radius: 0;
 }
 
 .nav .row {
+	margin-bottom: 0;
 	background: none;
 }
 
@@ -152,7 +155,7 @@ body {
 	list-style: none;
 	float: left;
 	a {
-		padding: 0 12px;
+		padding: 18px 12px;
 		color: #0d0d0d;
 		&:hover {
 			text-decoration: none;

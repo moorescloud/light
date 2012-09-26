@@ -22,15 +22,6 @@
 		initLayoutFix();
     
 	});
-  
-	// page init
-/* 	$(function(){ */
-/* 		initLayoutFix(); */
-/* 		initLightbox(); */
-/* 		initSlideAnchors(); */
-/* 		initCarousel(); */
-/* 	}); */
-	
 	
 	function initLayoutFix() {
 		var win = $(window);
@@ -41,5 +32,7 @@
 		}
 		win.bind('load resize', fixHeight);
 	}
+	
+	$('.nav, .product').localScroll();
   
 })(jQuery);
