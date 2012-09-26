@@ -72,7 +72,7 @@ body {
 	width: 100%;
 	img {
 		margin: 0 auto;
-		background: $r;
+		background: $g;
 		display: block;
 		-webkit-animation: cloudrgb 20s infinite 3s alternate;
 	}
@@ -153,15 +153,15 @@ body {
 
 @-webkit-keyframes cloudrgb {
 	0% {
-		background: $r;
+		background: $g;
 	}
 	33.333333% {
-		background: $g;
+		background: $r;
 	}
 	66.666666% {
 		background: $b;
 	}
 	100% {
-		background: $r;
+		background: $g;
 	}
 }
