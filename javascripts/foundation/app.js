@@ -51,7 +51,9 @@
     });
     
 	// Nav Scroll
-	$('#nav, #product').localScroll();
+	$('#nav, #product').localScroll({
+		/* Fsck! */
+	});
 	
 	// C’est Fin!
 	

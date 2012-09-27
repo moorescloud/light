@@ -4203,88 +4203,87 @@ p.vevent abbr {
 /* SS Standard */
 /* @3Easy */
 /* Colors */
+/* line 34, ../sass/app.scss */
+body {
+  background: black url(../images/lights.png) repeat-y center -5%;
+}
+
+/* line 38, ../sass/app.scss */
+.row {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 42, ../sass/app.scss */
+.no-rgba .row {
+  /* 	background: url(../images/black-gradient.png) repeat; */
+}
+
 /* Foundation Rows */
-/* line 35, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 .row {
   margin-bottom: 12px;
   padding: 15px 35px;
   border-radius: 10px;
 }
 
-/* line 41, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 .row.logo {
   margin-bottom: 0;
   padding: 0;
   border-radius: 0;
 }
 
-/* line 47, ../sass/app.scss */
+/* line 61, ../sass/app.scss */
 .row.intro {
   padding-top: 0;
   border-radius: 0 0 10px 10px;
 }
 
 /* Typography */
-/* line 54, ../sass/app.scss */
+/* line 69, ../sass/app.scss */
 h1, h3, h5 {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 75, ../sass/app.scss */
 h2, h4, h6 {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 81, ../sass/app.scss */
 body, p {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 71, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
 .intro p {
   font-size: 1.7rem;
 }
 
-/* line 75, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 a {
   color: white;
-  -webkit-transition: all .5s linear;
+  -webkit-transition: all .25s linear;
 }
-/* line 78, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 a:hover {
   color: white;
   text-decoration: underline;
 }
 
-/* line 84, ../sass/app.scss */
-body {
-  background: black url(../images/lights.png) repeat-y center -5%;
-  height: 10000px;
-}
-
-/* line 89, ../sass/app.scss */
-.row {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* line 93, ../sass/app.scss */
-.no-rgba .row {
-  /* 	background: url(../images/black-gradient.png) repeat; */
-}
-
 /* Product */
-/* line 99, ../sass/app.scss */
+/* line 102, ../sass/app.scss */
 #product {
   background: black;
   width: 100%;
   position: relative;
 }
-/* line 103, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 #product img {
   margin: 0 auto;
   background: lime;
@@ -4292,27 +4291,27 @@ body {
   -webkit-animation: cloudrgbcmy 20s infinite 3s alternate;
 }
 
-/* line 111, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .down {
   width: 100%;
   position: absolute;
   bottom: 50px;
 }
-/* line 115, ../sass/app.scss */
+/* line 118, ../sass/app.scss */
 .down a {
   color: #4a4a4a;
   font-size: 4rem;
   display: block;
   text-align: center;
 }
-/* line 120, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 .down a:hover {
   color: #777777;
   text-decoration: none;
 }
 
 /* Nav */
-/* line 129, ../sass/app.scss */
+/* line 133, ../sass/app.scss */
 #nav {
   background: #4a4a4a;
   border-radius: 0;
@@ -4320,14 +4319,14 @@ body {
   z-index: 1;
 }
 
-/* line 136, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 #nav .row {
   margin-bottom: 0;
   padding-bottom: 5px;
   background: none;
 }
 
-/* line 142, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 #nav ul li {
   font-family: Arvo, sans-serif;
   font-size: 1.5rem;
@@ -4335,78 +4334,78 @@ body {
   list-style: none;
   float: left;
 }
-/* line 148, ../sass/app.scss */
+/* line 152, ../sass/app.scss */
 #nav ul li a {
   padding: 18px 12px 16px;
   color: #0d0d0d;
 }
-/* line 151, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 #nav ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 158, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
 #nav ul li a.ss-icon {
   padding-top: 0;
   font-size: 2rem;
 }
 
-/* line 163, ../sass/app.scss */
+/* line 167, ../sass/app.scss */
 .fixed {
   position: fixed;
 }
 
 /* Animations */
 @-webkit-keyframes cloudrgb {
-  /* line 170, ../sass/app.scss */
+  /* line 175, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 173, ../sass/app.scss */
+  /* line 178, ../sass/app.scss */
   33.333333% {
     background: red;
   }
 
-  /* line 176, ../sass/app.scss */
+  /* line 181, ../sass/app.scss */
   66.666666% {
     background: blue;
   }
 
-  /* line 179, ../sass/app.scss */
+  /* line 184, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @-webkit-keyframes cloudrgbcmy {
-  /* line 185, ../sass/app.scss */
+  /* line 190, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 188, ../sass/app.scss */
+  /* line 193, ../sass/app.scss */
   16.666666% {
     background: yellow;
   }
 
-  /* line 191, ../sass/app.scss */
+  /* line 196, ../sass/app.scss */
   33.333333% {
     background: red;
   }
 
-  /* line 194, ../sass/app.scss */
+  /* line 199, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 197, ../sass/app.scss */
+  /* line 202, ../sass/app.scss */
   66.666666% {
     background: blue;
   }
 
-  /* line 200, ../sass/app.scss */
+  /* line 205, ../sass/app.scss */
   83.333333% {
     background: cyan;
   }
