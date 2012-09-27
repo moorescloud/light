@@ -7,10 +7,38 @@
 /* Foundation */
 @import "foundation";
 
-/* Google */
+/* Google Fonts */
 @import url(http://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Droid+Serif:400,700);
 
-/* 3Easy */
+/* SS Standard */
+@import url(../webfonts/ss-standard.css);
+
+/* @3Easy */
+
+/* Foundation Rows */
+
+.row {
+	margin-bottom: 12px;
+	padding: 15px 35px;
+/*
+	padding-top: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 15px;
+*/
+	border-radius: 10px;
+}
+
+.row.logo {
+	margin-bottom: 0;
+	padding: 0;
+	border-radius: 0;
+}
+
+.row.intro {
+	padding-top: 0;
+	border-radius: 0 0 10px 10px;
+}
 
 /* Typography */
 
@@ -67,38 +95,50 @@ body {
 
 /* Product */
 
-.product {
+#product {
 	background: #000000;
 	width: 100%;
+	position: relative;
 	img {
 		margin: 0 auto;
 		background: $g;
 		display: block;
-		-webkit-animation: cloudrgb 20s infinite 3s alternate;
+		-webkit-animation: cloudrgbcmy 20s infinite 3s alternate;
 	}
 }
 
 .down {
+	width: 100%;
 	position: absolute;
-	left: 50%;
-	bottom: 1em;
+	bottom: 50px;
+	a {
+		color: #4a4a4a;
+		font-size: 4rem;
+		display: block;
+		text-align: center;
+		&:hover {
+			color: #777777;
+			text-decoration: none;
+		}
+	}
 }
 
 /* Nav */
 
-.nav {
+#nav {
 	background: #4a4a4a;
 	border-radius: 0;
 	width: 100%;
 	z-index: 1;
 }
 
-.nav .row {
+#nav .row {
 	margin-bottom: 0;
+	padding-bottom: 5px;
 	background: none;
 }
 
-.nav ul li {
+#nav ul li {
 	font-family: Arvo, sans-serif;
 	font-size: 1.5rem;
 	color: #0d0d0d;
@@ -108,45 +148,24 @@ body {
 		padding: 18px 12px;
 		color: #0d0d0d;
 		&:hover {
+			color: #fff;
 			text-decoration: none;
 		}
 	}
 }
 
-.nav ul li.up {
+#nav ul li.up {
 	background: url(../images/up.png) no-repeat left top;
 	width: 35px;
 	height: 22px;
 }
 
+#nav ul li a.ss-icon {
+	font-size: 2rem;
+}
+
 .fixed {
 	position: fixed;
-}
-
-/* Rows & Columns  */
-
-.row {
-	margin-bottom: 12px;
-	padding-top: 15px;
-	padding-left: 35px;
-	padding-right: 35px;
-	padding-bottom: 15px;
-	border-radius: 10px;
-}
-
-.row.logo {
-	margin-bottom: 0;
-	padding: 0;
-	border-radius: 0;
-}
-
-.row.intro {
-	padding-top: 0;
-	border-radius: 0 0 10px 10px;
-}
-
-.column, .columns {
-	
 }
 
 /* Animations */
@@ -163,5 +182,26 @@ body {
 	}
 	100% {
 		background: $g;
+	}
+}
+
+@-webkit-keyframes cloudrgbcmy {
+	0% {
+		background: $g;
+	}
+	16.666666% {
+		background: $y;
+	}
+	33.333333% {
+		background: $r;
+	}
+	50% {
+		background: $m;
+	}
+	66.666666% {
+		background: $b;
+	}
+	83.333333% {
+		background: $c;
 	}
 }
