@@ -4286,9 +4286,9 @@ a:hover {
 /* line 106, ../sass/app.scss */
 #product img {
   margin: 0 auto;
-  background: lime;
+  background: white;
   display: block;
-  -webkit-animation: cloudrgbcmy 20s infinite 3s alternate;
+  -webkit-animation: booyah 20s infinite 3s alternate;
 }
 
 /* line 114, ../sass/app.scss */
@@ -4408,5 +4408,47 @@ a:hover {
   /* line 205, ../sass/app.scss */
   83.333333% {
     background: cyan;
+  }
+}
+
+@-webkit-keyframes booyah {
+  /* line 211, ../sass/app.scss */
+  0% {
+    background: white;
+  }
+
+  /* line 214, ../sass/app.scss */
+  25% {
+    background: yellow;
+  }
+
+  /* line 217, ../sass/app.scss */
+  37.5% {
+    background: red;
+  }
+
+  /* line 220, ../sass/app.scss */
+  50% {
+    background: magenta;
+  }
+
+  /* line 223, ../sass/app.scss */
+  62.5% {
+    background: blue;
+  }
+
+  /* line 226, ../sass/app.scss */
+  75% {
+    background: cyan;
+  }
+
+  /* line 229, ../sass/app.scss */
+  87.5% {
+    background: lime;
+  }
+
+  /* line 232, ../sass/app.scss */
+  100% {
+    background: white;
   }
 }
