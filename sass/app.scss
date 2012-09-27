@@ -15,17 +15,26 @@
 
 /* @3Easy */
 
+/* Colors */
+
+$green: #00ff00;
+$red: #ff0000;
+$blue: #0000ff;
+$cyan: #00ffff;
+$yellow: #ffff00;
+$magenta: #ff00ff;
+$greylight: #777777;
+$greydark: #4a4a4a;
+$greydeep: #0d0d0d;
+$black: #000000;
+$white: #ffffff;
+$title: #999999;
+
 /* Foundation Rows */
 
 .row {
 	margin-bottom: 12px;
 	padding: 15px 35px;
-/*
-	padding-top: 15px;
-	padding-left: 35px;
-	padding-right: 35px;
-	padding-bottom: 15px;
-*/
 	border-radius: 10px;
 }
 
@@ -43,19 +52,19 @@
 /* Typography */
 
 h1, h3, h5 {
-	color: #999999;
+	color: $title;
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: normal;
 }
 
 h2, h4, h6 {
-	color: #999999;
+	color: $title;
 	font-family: 'Droid Serif', serif;
 	font-weight: normal;
 }
 
 body, p {
-	color: #999999;
+	color: $title;
 	font-family: 'Droid Sans', sans-serif;
 }
 
@@ -64,24 +73,16 @@ body, p {
 }
 
 a {
-	color: #ffffff;
+	color: $white;
+	-webkit-transition: all .5s linear;
 	&:hover {
-		color: #ffffff;
+		color: $white;
 		text-decoration: underline;
 	}
 }
 
-/* Colors */
-
-$g: #00ff00;
-$r: #ff0000;
-$b: #0000ff;
-$c: #00ffff;
-$y: #ffff00;
-$m: #ff00ff;
-
 body {
-	background: #000 url(../images/lights.png) repeat-y center -5%;
+	background: $black url(../images/lights.png) repeat-y center -5%;
 	height: 10000px;
 }
 
@@ -96,12 +97,12 @@ body {
 /* Product */
 
 #product {
-	background: #000000;
+	background: $black;
 	width: 100%;
 	position: relative;
 	img {
 		margin: 0 auto;
-		background: $g;
+		background: $green;
 		display: block;
 		-webkit-animation: cloudrgbcmy 20s infinite 3s alternate;
 	}
@@ -112,12 +113,12 @@ body {
 	position: absolute;
 	bottom: 50px;
 	a {
-		color: #4a4a4a;
+		color: $greydark;
 		font-size: 4rem;
 		display: block;
 		text-align: center;
 		&:hover {
-			color: #777777;
+			color: $greylight;
 			text-decoration: none;
 		}
 	}
@@ -126,7 +127,7 @@ body {
 /* Nav */
 
 #nav {
-	background: #4a4a4a;
+	background: $greydark;
 	border-radius: 0;
 	width: 100%;
 	z-index: 1;
@@ -141,12 +142,12 @@ body {
 #nav ul li {
 	font-family: Arvo, sans-serif;
 	font-size: 1.5rem;
-	color: #0d0d0d;
+	color: $greydeep;
 	list-style: none;
 	float: left;
 	a {
-		padding: 18px 12px;
-		color: #0d0d0d;
+		padding: 18px 12px 16px;
+		color: $greydeep;
 		&:hover {
 			color: #fff;
 			text-decoration: none;
@@ -154,13 +155,8 @@ body {
 	}
 }
 
-#nav ul li.up {
-	background: url(../images/up.png) no-repeat left top;
-	width: 35px;
-	height: 22px;
-}
-
 #nav ul li a.ss-icon {
+	padding-top: 0;
 	font-size: 2rem;
 }
 
@@ -172,36 +168,36 @@ body {
 
 @-webkit-keyframes cloudrgb {
 	0% {
-		background: $g;
+		background: $green;
 	}
 	33.333333% {
-		background: $r;
+		background: $red;
 	}
 	66.666666% {
-		background: $b;
+		background: $blue;
 	}
 	100% {
-		background: $g;
+		background: $green;
 	}
 }
 
 @-webkit-keyframes cloudrgbcmy {
 	0% {
-		background: $g;
+		background: $green;
 	}
 	16.666666% {
-		background: $y;
+		background: $yellow;
 	}
 	33.333333% {
-		background: $r;
+		background: $red;
 	}
 	50% {
-		background: $m;
+		background: $magenta;
 	}
 	66.666666% {
-		background: $b;
+		background: $blue;
 	}
 	83.333333% {
-		background: $c;
+		background: $cyan;
 	}
 }

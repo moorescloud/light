@@ -42,7 +42,6 @@
 	// Nav Fix
 	var productHeight = $('#product').outerHeight();
 	var navHeight = $('#nav').outerHeight();
-/* 	var aboveHeight = $('#product').outerHeight() + $('#nav').outerHeight; */
     $(window).scroll(function(){
         if ($(window).scrollTop() > $(window).height()){
 	        $('#nav').addClass('fixed').css('top','0').next().css('padding-top', navHeight);

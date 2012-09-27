@@ -4202,94 +4202,89 @@ p.vevent abbr {
 /* Google Fonts */
 /* SS Standard */
 /* @3Easy */
+/* Colors */
 /* Foundation Rows */
-/* line 20, ../sass/app.scss */
+/* line 35, ../sass/app.scss */
 .row {
   margin-bottom: 12px;
   padding: 15px 35px;
-  /*
-  	padding-top: 15px;
-  	padding-left: 35px;
-  	padding-right: 35px;
-  	padding-bottom: 15px;
-  */
   border-radius: 10px;
 }
 
-/* line 32, ../sass/app.scss */
+/* line 41, ../sass/app.scss */
 .row.logo {
   margin-bottom: 0;
   padding: 0;
   border-radius: 0;
 }
 
-/* line 38, ../sass/app.scss */
+/* line 47, ../sass/app.scss */
 .row.intro {
   padding-top: 0;
   border-radius: 0 0 10px 10px;
 }
 
 /* Typography */
-/* line 45, ../sass/app.scss */
+/* line 54, ../sass/app.scss */
 h1, h3, h5 {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
 }
 
-/* line 51, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 h2, h4, h6 {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 body, p {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 62, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 .intro p {
   font-size: 1.7rem;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 75, ../sass/app.scss */
 a {
-  color: #ffffff;
+  color: white;
+  -webkit-transition: all .5s linear;
 }
-/* line 68, ../sass/app.scss */
+/* line 78, ../sass/app.scss */
 a:hover {
-  color: #ffffff;
+  color: white;
   text-decoration: underline;
 }
 
-/* Colors */
-/* line 83, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 body {
   background: black url(../images/lights.png) repeat-y center -5%;
   height: 10000px;
 }
 
-/* line 88, ../sass/app.scss */
+/* line 89, ../sass/app.scss */
 .row {
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 92, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 .no-rgba .row {
   /* 	background: url(../images/black-gradient.png) repeat; */
 }
 
 /* Product */
-/* line 98, ../sass/app.scss */
+/* line 99, ../sass/app.scss */
 #product {
-  background: #000000;
+  background: black;
   width: 100%;
   position: relative;
 }
-/* line 102, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 #product img {
   margin: 0 auto;
   background: lime;
@@ -4297,27 +4292,27 @@ body {
   -webkit-animation: cloudrgbcmy 20s infinite 3s alternate;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 .down {
   width: 100%;
   position: absolute;
   bottom: 50px;
 }
-/* line 114, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 .down a {
   color: #4a4a4a;
   font-size: 4rem;
   display: block;
   text-align: center;
 }
-/* line 119, ../sass/app.scss */
+/* line 120, ../sass/app.scss */
 .down a:hover {
   color: #777777;
   text-decoration: none;
 }
 
 /* Nav */
-/* line 128, ../sass/app.scss */
+/* line 129, ../sass/app.scss */
 #nav {
   background: #4a4a4a;
   border-radius: 0;
@@ -4325,14 +4320,14 @@ body {
   z-index: 1;
 }
 
-/* line 135, ../sass/app.scss */
+/* line 136, ../sass/app.scss */
 #nav .row {
   margin-bottom: 0;
   padding-bottom: 5px;
   background: none;
 }
 
-/* line 141, ../sass/app.scss */
+/* line 142, ../sass/app.scss */
 #nav ul li {
   font-family: Arvo, sans-serif;
   font-size: 1.5rem;
@@ -4340,84 +4335,78 @@ body {
   list-style: none;
   float: left;
 }
-/* line 147, ../sass/app.scss */
+/* line 148, ../sass/app.scss */
 #nav ul li a {
-  padding: 18px 12px;
+  padding: 18px 12px 16px;
   color: #0d0d0d;
 }
-/* line 150, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 #nav ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 157, ../sass/app.scss */
-#nav ul li.up {
-  background: url(../images/up.png) no-repeat left top;
-  width: 35px;
-  height: 22px;
-}
-
-/* line 163, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 #nav ul li a.ss-icon {
+  padding-top: 0;
   font-size: 2rem;
 }
 
-/* line 167, ../sass/app.scss */
+/* line 163, ../sass/app.scss */
 .fixed {
   position: fixed;
 }
 
 /* Animations */
 @-webkit-keyframes cloudrgb {
-  /* line 174, ../sass/app.scss */
+  /* line 170, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 177, ../sass/app.scss */
+  /* line 173, ../sass/app.scss */
   33.333333% {
     background: red;
   }
 
-  /* line 180, ../sass/app.scss */
+  /* line 176, ../sass/app.scss */
   66.666666% {
     background: blue;
   }
 
-  /* line 183, ../sass/app.scss */
+  /* line 179, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @-webkit-keyframes cloudrgbcmy {
-  /* line 189, ../sass/app.scss */
+  /* line 185, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 192, ../sass/app.scss */
+  /* line 188, ../sass/app.scss */
   16.666666% {
     background: yellow;
   }
 
-  /* line 195, ../sass/app.scss */
+  /* line 191, ../sass/app.scss */
   33.333333% {
     background: red;
   }
 
-  /* line 198, ../sass/app.scss */
+  /* line 194, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 201, ../sass/app.scss */
+  /* line 197, ../sass/app.scss */
   66.666666% {
     background: blue;
   }
 
-  /* line 204, ../sass/app.scss */
+  /* line 200, ../sass/app.scss */
   83.333333% {
     background: cyan;
   }
