@@ -4273,45 +4273,53 @@ a {
 /* line 93, ../sass/app.scss */
 a:hover {
   color: white;
-  text-decoration: underline;
+}
+
+/* line 98, ../sass/app.scss */
+p.more {
+  color: white;
+}
+/* line 100, ../sass/app.scss */
+p.more:hover {
+  cursor: pointer;
 }
 
 /* Product */
-/* line 102, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 #product {
   background: black;
   width: 100%;
   position: relative;
 }
-/* line 106, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 #product img {
   margin: 0 auto;
-  background: white;
+  background: lime;
   display: block;
   -webkit-animation: booyah 20s infinite 3s alternate;
 }
 
-/* line 114, ../sass/app.scss */
+/* line 120, ../sass/app.scss */
 .down {
   width: 100%;
   position: absolute;
   bottom: 50px;
 }
-/* line 118, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 .down a {
   color: #4a4a4a;
   font-size: 4rem;
   display: block;
   text-align: center;
 }
-/* line 123, ../sass/app.scss */
+/* line 129, ../sass/app.scss */
 .down a:hover {
   color: #777777;
   text-decoration: none;
 }
 
 /* Nav */
-/* line 133, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 #nav {
   background: #4a4a4a;
   border-radius: 0;
@@ -4319,14 +4327,14 @@ a:hover {
   z-index: 1;
 }
 
-/* line 140, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 #nav .row {
   margin-bottom: 0;
   padding-bottom: 5px;
   background: none;
 }
 
-/* line 146, ../sass/app.scss */
+/* line 152, ../sass/app.scss */
 #nav ul li {
   font-family: Arvo, sans-serif;
   font-size: 1.5rem;
@@ -4334,121 +4342,121 @@ a:hover {
   list-style: none;
   float: left;
 }
-/* line 152, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 #nav ul li a {
   padding: 18px 12px 16px;
   color: #0d0d0d;
 }
-/* line 155, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 #nav ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 162, ../sass/app.scss */
+/* line 168, ../sass/app.scss */
 #nav ul li a.ss-icon {
   padding-top: 0;
   font-size: 2rem;
 }
 
-/* line 167, ../sass/app.scss */
+/* line 173, ../sass/app.scss */
 .fixed {
   position: fixed;
 }
 
 /* Animations */
 @-webkit-keyframes cloudrgb {
-  /* line 175, ../sass/app.scss */
+  /* line 181, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 178, ../sass/app.scss */
+  /* line 184, ../sass/app.scss */
   33.333333% {
     background: red;
   }
 
-  /* line 181, ../sass/app.scss */
+  /* line 187, ../sass/app.scss */
   66.666666% {
     background: blue;
   }
 
-  /* line 184, ../sass/app.scss */
+  /* line 190, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @-webkit-keyframes cloudrgbcmy {
-  /* line 190, ../sass/app.scss */
+  /* line 196, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 193, ../sass/app.scss */
+  /* line 199, ../sass/app.scss */
   16.666666% {
     background: yellow;
   }
 
-  /* line 196, ../sass/app.scss */
+  /* line 202, ../sass/app.scss */
   33.333333% {
     background: red;
   }
 
-  /* line 199, ../sass/app.scss */
+  /* line 205, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 202, ../sass/app.scss */
+  /* line 208, ../sass/app.scss */
   66.666666% {
     background: blue;
   }
 
-  /* line 205, ../sass/app.scss */
+  /* line 211, ../sass/app.scss */
   83.333333% {
     background: cyan;
   }
 }
 
 @-webkit-keyframes booyah {
-  /* line 211, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   0% {
-    background: white;
+    background: lime;
   }
 
-  /* line 214, ../sass/app.scss */
+  /* line 220, ../sass/app.scss */
   25% {
     background: yellow;
   }
 
-  /* line 217, ../sass/app.scss */
+  /* line 223, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 220, ../sass/app.scss */
+  /* line 226, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 223, ../sass/app.scss */
+  /* line 229, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 226, ../sass/app.scss */
+  /* line 232, ../sass/app.scss */
   75% {
     background: cyan;
   }
 
-  /* line 229, ../sass/app.scss */
+  /* line 235, ../sass/app.scss */
   87.5% {
-    background: lime;
+    background: white;
   }
 
-  /* line 232, ../sass/app.scss */
+  /* line 238, ../sass/app.scss */
   100% {
-    background: white;
+    background: lime;
   }
 }

@@ -92,7 +92,13 @@ a {
 	-webkit-transition: all .25s linear;
 	&:hover {
 		color: $white;
-		text-decoration: underline;
+	}
+}
+
+p.more {
+	color: $white;
+	&:hover {
+		cursor: pointer;
 	}
 }
 
@@ -105,7 +111,7 @@ a {
 	position: relative;
 	img {
 		margin: 0 auto;
-		background: $white;
+		background: $green;
 		display: block;
 		-webkit-animation: booyah 20s infinite 3s alternate;
 	}
@@ -209,7 +215,7 @@ a {
 
 @-webkit-keyframes booyah {
 	0% {
-		background: $white;
+		background: $green;
 	}
 	25% {
 		background: $yellow;
@@ -227,9 +233,9 @@ a {
 		background: $cyan;
 	}
 	87.5% {
-		background: $green;
+		background: $white;
 	}
 	100% {
-		background: $white;
+		background: $green;
 	}
 }
