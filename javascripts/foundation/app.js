@@ -59,7 +59,7 @@
 	$('.moar').hide();
 	$('.more').click(function(){
 		$(this).next().slideToggle();
-		$(this).html('Less &laquo;').addClass('less');
+/* 		$(this).html('Less &laquo;').addClass('less'); */
     });	
 	
 	// C’est Fin!
