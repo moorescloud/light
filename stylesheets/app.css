@@ -4349,7 +4349,7 @@ p.more:hover {
 }
 /* line 161, ../sass/app.scss */
 #nav ul li a:hover {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 

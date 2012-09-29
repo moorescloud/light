@@ -29,12 +29,12 @@
 	function initLayoutFix() {
 		var viewport = $(window);
 		var product = $('#product');
-		var haight = $(window).height();
+		var viewport_height = $(viewport).height();
+		var product_height = $(product).height();
 		function fixHeight() {
 			product.css({
-				height: haight
-/* 				height: Math.max(viewport.height(), 400) - parseInt(product.css('paddingBottom')) - parseInt(product.css('paddingTop')) */
-				});
+				height: viewport_height
+			});
 		}
 		viewport.bind('load resize', fixHeight);
 	}
@@ -50,10 +50,24 @@
         }
     });
     
-	// Nav Scroll
-	$('#nav, #product').localScroll({
-		/* Fsck! Stop Nav Overlap */
+    // Scroll Product
+	$('#product').localScroll({
+		offset: -50
 	});
+	
+	// Scroll Nav
+	$('#nav').localScroll({
+		offset: -62
+	});
+	
+	// Nav Highlights
+/*
+	$('#nav li a').click(function(){
+		loc = $(this).attr('href');
+		$('#nav a.current').removeClass('current');
+		$(loc).find('a[href="' + loc + '"]').addClass('current');
+	});
+*/
 	
 	// More
 	$('.moar').hide();
