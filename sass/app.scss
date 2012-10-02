@@ -58,6 +58,14 @@ body {
 	border-radius: 0 0 10px 10px;
 }
 
+.nav .row {
+	margin-bottom: 0;
+/* 	padding-bottom: 5px; */
+	padding: 15px 0 5px 0;
+	background: none;
+}
+
+
 
 /* Typography */
 
@@ -166,12 +174,6 @@ p.more {
 			}
 		}
 	}
-}
-
-.nav .row {
-	margin-bottom: 0;
-	padding-bottom: 5px;
-	background: none;
 }
 
 .nav a.ss-icon {
