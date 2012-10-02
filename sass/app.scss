@@ -143,20 +143,20 @@ p.more {
 
 /* Nav */
 
-#nav {
+.nav {
 	background: $greydark;
 	border-radius: 0;
 	width: 100%;
 	z-index: 1;
 }
 
-#nav .row {
+.nav .row {
 	margin-bottom: 0;
 	padding-bottom: 5px;
 	background: none;
 }
 
-#nav ul li {
+.nav ul li {
 	font-family: Arvo, sans-serif;
 	font-size: 1.5rem;
 	color: $greydeep;
@@ -172,7 +172,7 @@ p.more {
 	}
 }
 
-#nav ul li a.ss-icon {
+.nav ul li a.ss-icon {
 	padding-top: 0;
 	font-size: 2rem;
 }
@@ -181,6 +181,45 @@ p.more {
 	position: fixed;
 }
 
+/* Team */
+
+.team div {
+	min-height: 350px;
+}
+
+.team > div {
+	min-height: 0;
+}
+
+.team figure {
+	position: relative;
+}
+
+.team figure img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.team figure img.off {
+	opacity: 1;
+	@include transition-property(opacity);
+	@include transition-duration(.25s);
+	@include transition-timing-function(linear);
+	&:hover {
+		opacity: 0;
+	}
+}
+
+.team figure img.on {
+	opacity: 0;
+	@include transition-property(opacity);
+	@include transition-duration(.5s);
+	@include transition-timing-function(linear);
+	&:hover {
+		opacity: 1;
+	}
+}
 
 /* Animations */
 
