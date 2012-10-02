@@ -1,19 +1,14 @@
-/* MooresLights LightCloud™ ®© 
+/* MooresLights 
+	@project: LightCloud™
+	@author: @3Easy
+	@website: 3easy.org
 */
 
-/* Settings */
 @import "settings";
-
-/* Foundation */
 @import "foundation";
-
-/* Google Fonts */
 @import url(http://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Droid+Serif:400,700);
-
-/* SS Standard */
 @import url(../webfonts/ss-standard.css);
-
-/* @3Easy */
+@import url(partials/animate.sass);
 
 
 /* Colors */
@@ -32,7 +27,7 @@
 	$title: #999999;
 	
 body {
-	background: $black url(../images/lights.png) repeat-y center -5%;
+	background: $black url(../images/lights.png) repeat-y center top;
 }
 
 .row {
@@ -87,9 +82,17 @@ body, p {
 	font-size: 1.7rem;
 }
 
+#contact p {
+	vertical-align: middle;
+}
+
+/* Links */
+
 a {
 	color: $white;
-	-webkit-transition: all .25s linear;
+	@include transition-property(color);
+	@include transition-duration(.25s);
+	@include transition-timing-function(linear);
 	&:hover {
 		color: $white;
 	}
@@ -114,6 +117,10 @@ p.more {
 		background: $green;
 		display: block;
 		-webkit-animation: booyah 20s infinite 3s alternate;
+		-moz-animation: booyah 20s infinite 3s alternate;
+		-ms-animation: booyah 20s infinite 3s alternate;
+		-o-animation: booyah 20s infinite 3s alternate;
+		animation: booyah 20s infinite 3s alternate;
 	}
 }
 
@@ -239,3 +246,113 @@ p.more {
 		background: $green;
 	}
 }
+
+@-moz-keyframes booyah {
+	0% {
+		background: $green;
+	}
+	25% {
+		background: $yellow;
+	}
+	37.5% {
+		background: $red;
+	}
+	50% {
+		background: $magenta;
+	}
+	62.5% {
+		background: $blue;
+	}
+	75% {
+		background: $cyan;
+	}
+	87.5% {
+		background: $white;
+	}
+	100% {
+		background: $green;
+	}
+}
+
+@-ms-keyframes booyah {
+	0% {
+		background: $green;
+	}
+	25% {
+		background: $yellow;
+	}
+	37.5% {
+		background: $red;
+	}
+	50% {
+		background: $magenta;
+	}
+	62.5% {
+		background: $blue;
+	}
+	75% {
+		background: $cyan;
+	}
+	87.5% {
+		background: $white;
+	}
+	100% {
+		background: $green;
+	}
+}
+
+@-o-keyframes booyah {
+	0% {
+		background: $green;
+	}
+	25% {
+		background: $yellow;
+	}
+	37.5% {
+		background: $red;
+	}
+	50% {
+		background: $magenta;
+	}
+	62.5% {
+		background: $blue;
+	}
+	75% {
+		background: $cyan;
+	}
+	87.5% {
+		background: $white;
+	}
+	100% {
+		background: $green;
+	}
+}
+
+@keyframes booyah {
+	0% {
+		background: $green;
+	}
+	25% {
+		background: $yellow;
+	}
+	37.5% {
+		background: $red;
+	}
+	50% {
+		background: $magenta;
+	}
+	62.5% {
+		background: $blue;
+	}
+	75% {
+		background: $cyan;
+	}
+	87.5% {
+		background: $white;
+	}
+	100% {
+		background: $green;
+	}
+}
+
+/* @3Easy Woz ‘Ere :O) */
