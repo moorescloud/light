@@ -39,27 +39,25 @@
 		viewport.bind('load resize', fixHeight);
 	}
 		
-	// Nav Fix
+	// Fixie Nav
+	
 	var productHeight = $('#product').outerHeight();
-	var navHeight = $('#nav').outerHeight();
+    
     $(window).scroll(function(){
         if ($(window).scrollTop() > $(window).height()){
-	        $('#nav').addClass('fixed').css('top','0').next().css('padding-top', navHeight);
+	        $('.nav').addClass('fixed').css('top','0');
+	        $('#content').css('padding-top', '52px');
         } else {
-            $('#nav').removeClass('fixed').next().css('padding-top','0');
+            $('.nav').removeClass('fixed');
+            $('#content').css('padding-top','0');
         }
     });
     
-    // Scroll Product
-	$('#product').localScroll({
+    // Scroll
+    $('#product, .nav').localScroll({
 		offset: -50
 	});
-	
-	// Scroll Nav
-	$('#nav').localScroll({
-		offset: -62
-	});
-	
+		
 	// Nav Highlights
 /*
 	$('#nav li a').click(function(){
