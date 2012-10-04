@@ -64,7 +64,7 @@
 	$('.mobimore').click(function(){
 		$('.mobimore').hide();
 		$('.mobiless').show();
-		$('.mobi').fadeIn();
+		$('.mobi').slideDown();
 	});
 	
 	$('.mobiless, .mobi a').click(function(){

@@ -189,7 +189,8 @@ p.more {
 /* Nav Mobi */
 
 .nav.show-for-small {
-	background: $black url(../images/lc.png) no-repeat 30px 0;
+	background: $black;
+/* 	background: $black url(../images/lc.png) no-repeat 30px 0; */
 	color: $white;
 	ul {
 		li {
