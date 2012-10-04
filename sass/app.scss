@@ -71,6 +71,8 @@ body {
 
 
 
+
+
 /* Typography */
 
 h1, h3, h5 {
@@ -184,9 +186,22 @@ p.more {
 	font-size: 2rem;
 }
 
-/* Nav Mobile */
+/* Nav Mobi */
+
+.nav.show-for-small {
+	background: $black url(../images/lc.png) no-repeat 30px 0;
+	color: $white;
+	ul {
+		li {
+			a {
+				color: $white;
+			}
+		}
+	}
+}
 
 ul.mobi {
+	margin-top: 50px;
 	padding: 0 35px;
 	display: none;
 	text-align: left;
@@ -197,6 +212,11 @@ ul.mobi {
 			display: block;
 		}
 	}
+}
+
+ul.moreorless {
+	display: inline;
+	float: right;
 }
 
 .mobiless {
@@ -211,45 +231,6 @@ ul.mobi {
 .fixed {
 	position: fixed;
 }
-
-/* Pop */
-
-/*
-.pop {
-	width: 100%;
-	position: fixed;
-	top: 66px;
-	z-index: 33;
-}
-
-*/
-
-.popper, .peeper {
-	&:hover {
-		cursor: pointer;
-	}
-}
-
-/* Modal */
-
-/*
-#navpop {
-	&:hover {
-		cursor: pointer;
-	}
-}
-*/
-
-/*
-.reveal-modal {
-	background: rgba(0, 0, 0, .8);
-	color: $greydeep;
-	font-family: Arvo, sans-serif;
-	font-size: 1.5rem;
-	border-radius: 10px;
-}
-*/
-
 
 /* Team */
 
@@ -281,6 +262,10 @@ ul.mobi {
 	&:hover {
 		opacity: 1;
 	}
+}
+
+.touch .team figure img {
+	opacity: 1;
 }
 
 
