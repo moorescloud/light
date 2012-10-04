@@ -42,26 +42,30 @@ body {
 /* Foundation Rows */
 
 .row {
-	margin-bottom: 12px;
+	margin-top: 12px;
+/* 	margin-bottom: 12px; */
 	padding: 15px 35px;
 	border-radius: 10px;
 }
 
 .row.logo {
-	margin-bottom: 0;
+	margin-top: 0;
+/* 	margin-bottom: 0; */
 	padding: 0;
 	border-radius: 0;
 }
 
 .row.intro {
+	margin-top: 0;
 	padding-top: 0;
 	border-radius: 0 0 10px 10px;
 }
 
 .nav .row {
-	margin-bottom: 0;
-/* 	padding-bottom: 5px; */
+	margin-top: 0;
+/* 	margin-bottom: 0; */
 	padding: 15px 0 5px 0;
+/* 	padding: 0; */
 	background: none;
 }
 
@@ -156,7 +160,6 @@ p.more {
 	font-size: 1.5rem;
 	width: 100%;
 	text-align: center;
-/* 	height: 50px; */
 	z-index: 1;
 	ul {
 		margin-bottom: 0; 
@@ -181,9 +184,71 @@ p.more {
 	font-size: 2rem;
 }
 
+/* Nav Mobile */
+
+ul.mobi {
+	padding: 0 35px;
+	display: none;
+	text-align: left;
+	li {
+		float: none;
+		a {
+			padding: 0;
+			display: block;
+		}
+	}
+}
+
+.mobiless {
+	display: none;
+}
+
+.mobiless, 
+.mobimore {
+	cursor: pointer;
+}
+
 .fixed {
 	position: fixed;
 }
+
+/* Pop */
+
+/*
+.pop {
+	width: 100%;
+	position: fixed;
+	top: 66px;
+	z-index: 33;
+}
+
+*/
+
+.popper, .peeper {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+/* Modal */
+
+/*
+#navpop {
+	&:hover {
+		cursor: pointer;
+	}
+}
+*/
+
+/*
+.reveal-modal {
+	background: rgba(0, 0, 0, .8);
+	color: $greydeep;
+	font-family: Arvo, sans-serif;
+	font-size: 1.5rem;
+	border-radius: 10px;
+}
+*/
 
 
 /* Team */
@@ -191,12 +256,11 @@ p.more {
 .team figure {
 	min-height: 350px;
 	position: relative;
-}
-
-.team figure img {
-	position: absolute;
-	top: 0;
-	left: 0;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 .team figure img.off {

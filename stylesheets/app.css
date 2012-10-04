@@ -4220,60 +4220,64 @@ body {
 /* Foundation Rows */
 /* line 44, ../sass/app.scss */
 .row {
-  margin-bottom: 12px;
+  margin-top: 12px;
+  /* 	margin-bottom: 12px; */
   padding: 15px 35px;
   border-radius: 10px;
 }
 
-/* line 50, ../sass/app.scss */
+/* line 51, ../sass/app.scss */
 .row.logo {
-  margin-bottom: 0;
+  margin-top: 0;
+  /* 	margin-bottom: 0; */
   padding: 0;
   border-radius: 0;
 }
 
-/* line 56, ../sass/app.scss */
+/* line 58, ../sass/app.scss */
 .row.intro {
+  margin-top: 0;
   padding-top: 0;
   border-radius: 0 0 10px 10px;
 }
 
-/* line 61, ../sass/app.scss */
+/* line 64, ../sass/app.scss */
 .nav .row {
-  margin-bottom: 0;
-  /* 	padding-bottom: 5px; */
+  margin-top: 0;
+  /* 	margin-bottom: 0; */
   padding: 15px 0 5px 0;
+  /* 	padding: 0; */
   background: none;
 }
 
 /* Typography */
-/* line 72, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 h1, h3, h5 {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
 }
 
-/* line 78, ../sass/app.scss */
+/* line 82, ../sass/app.scss */
 h2, h4, h6 {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 
-/* line 84, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 body, p {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 .intro p {
   font-size: 1.7rem;
 }
 
 /* Links */
-/* line 96, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 a {
   color: white;
   -webkit-transition-property: color;
@@ -4289,28 +4293,28 @@ a {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 101, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 a:hover {
   color: white;
 }
 
-/* line 106, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 p.more {
   color: white;
 }
-/* line 108, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 p.more:hover {
   cursor: pointer;
 }
 
 /* Product */
-/* line 116, ../sass/app.scss */
+/* line 120, ../sass/app.scss */
 #product {
   background: black;
   width: 100%;
   position: relative;
 }
-/* line 120, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 #product img {
   margin: 0 auto;
   background: lime;
@@ -4322,27 +4326,27 @@ p.more:hover {
   animation: booyah 20s infinite 3s alternate;
 }
 
-/* line 132, ../sass/app.scss */
+/* line 136, ../sass/app.scss */
 .down {
   width: 100%;
   position: absolute;
   bottom: 50px;
 }
-/* line 136, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 .down a {
   color: #4a4a4a;
   font-size: 4rem;
   display: block;
   text-align: center;
 }
-/* line 141, ../sass/app.scss */
+/* line 145, ../sass/app.scss */
 .down a:hover {
   color: #777777;
   text-decoration: none;
 }
 
 /* Nav */
-/* line 151, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 .nav {
   background: #4a4a4a;
   color: #0d0d0d;
@@ -4351,56 +4355,114 @@ p.more:hover {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
-  /* 	height: 50px; */
   z-index: 1;
 }
-/* line 161, ../sass/app.scss */
+/* line 164, ../sass/app.scss */
 .nav ul {
   margin-bottom: 0;
   display: inline-block;
 }
-/* line 164, ../sass/app.scss */
+/* line 167, ../sass/app.scss */
 .nav ul li {
   list-style: none;
   float: left;
 }
-/* line 167, ../sass/app.scss */
+/* line 170, ../sass/app.scss */
 .nav ul li a {
   padding: 18px 12px 16px;
   color: #0d0d0d;
 }
-/* line 170, ../sass/app.scss */
+/* line 173, ../sass/app.scss */
 .nav ul li a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 179, ../sass/app.scss */
+/* line 182, ../sass/app.scss */
 .nav a.ss-icon {
   padding: 16px 10px 10px;
   font-size: 2rem;
 }
 
-/* line 184, ../sass/app.scss */
+/* Nav Mobile */
+/* line 189, ../sass/app.scss */
+ul.mobi {
+  padding: 0 35px;
+  display: none;
+  text-align: left;
+}
+/* line 193, ../sass/app.scss */
+ul.mobi li {
+  float: none;
+}
+/* line 195, ../sass/app.scss */
+ul.mobi li a {
+  padding: 0;
+  display: block;
+}
+
+/* line 202, ../sass/app.scss */
+.mobiless {
+  display: none;
+}
+
+/* line 207, ../sass/app.scss */
+.mobiless,
+.mobimore {
+  cursor: pointer;
+}
+
+/* line 211, ../sass/app.scss */
 .fixed {
   position: fixed;
 }
 
+/* Pop */
+/*
+.pop {
+	width: 100%;
+	position: fixed;
+	top: 66px;
+	z-index: 33;
+}
+
+*/
+/* line 228, ../sass/app.scss */
+.popper:hover, .peeper:hover {
+  cursor: pointer;
+}
+
+/* Modal */
+/*
+#navpop {
+	&:hover {
+		cursor: pointer;
+	}
+}
+*/
+/*
+.reveal-modal {
+	background: rgba(0, 0, 0, .8);
+	color: $greydeep;
+	font-family: Arvo, sans-serif;
+	font-size: 1.5rem;
+	border-radius: 10px;
+}
+*/
 /* Team */
-/* line 191, ../sass/app.scss */
+/* line 256, ../sass/app.scss */
 .team figure {
   min-height: 350px;
   position: relative;
 }
-
-/* line 196, ../sass/app.scss */
+/* line 259, ../sass/app.scss */
 .team figure img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 202, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 .team figure img.off {
   opacity: 1;
   -webkit-transition-property: opacity;
@@ -4416,12 +4478,12 @@ p.more:hover {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 207, ../sass/app.scss */
+/* line 271, ../sass/app.scss */
 .team figure img.off:hover {
   opacity: 0;
 }
 
-/* line 212, ../sass/app.scss */
+/* line 276, ../sass/app.scss */
 .team figure img.on {
   opacity: 0;
   -webkit-transition-property: opacity;
@@ -4437,223 +4499,223 @@ p.more:hover {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 217, ../sass/app.scss */
+/* line 281, ../sass/app.scss */
 .team figure img.on:hover {
   opacity: 1;
 }
 
 /* Contact */
-/* line 225, ../sass/app.scss */
+/* line 289, ../sass/app.scss */
 .contact p {
   margin-top: 17px;
 }
 
 /* Animations */
 @-webkit-keyframes booyah {
-  /* line 232, ../sass/app.scss */
+  /* line 296, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 235, ../sass/app.scss */
+  /* line 299, ../sass/app.scss */
   25% {
     background: yellow;
   }
 
-  /* line 238, ../sass/app.scss */
+  /* line 302, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 241, ../sass/app.scss */
+  /* line 305, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 244, ../sass/app.scss */
+  /* line 308, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 247, ../sass/app.scss */
+  /* line 311, ../sass/app.scss */
   75% {
     background: cyan;
   }
 
-  /* line 250, ../sass/app.scss */
+  /* line 314, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 253, ../sass/app.scss */
+  /* line 317, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @-moz-keyframes booyah {
-  /* line 259, ../sass/app.scss */
+  /* line 323, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 262, ../sass/app.scss */
+  /* line 326, ../sass/app.scss */
   25% {
     background: yellow;
   }
 
-  /* line 265, ../sass/app.scss */
+  /* line 329, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 268, ../sass/app.scss */
+  /* line 332, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 271, ../sass/app.scss */
+  /* line 335, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 274, ../sass/app.scss */
+  /* line 338, ../sass/app.scss */
   75% {
     background: cyan;
   }
 
-  /* line 277, ../sass/app.scss */
+  /* line 341, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 280, ../sass/app.scss */
+  /* line 344, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @-ms-keyframes booyah {
-  /* line 286, ../sass/app.scss */
+  /* line 350, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 289, ../sass/app.scss */
+  /* line 353, ../sass/app.scss */
   25% {
     background: yellow;
   }
 
-  /* line 292, ../sass/app.scss */
+  /* line 356, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 295, ../sass/app.scss */
+  /* line 359, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 298, ../sass/app.scss */
+  /* line 362, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 301, ../sass/app.scss */
+  /* line 365, ../sass/app.scss */
   75% {
     background: cyan;
   }
 
-  /* line 304, ../sass/app.scss */
+  /* line 368, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 307, ../sass/app.scss */
+  /* line 371, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @-o-keyframes booyah {
-  /* line 313, ../sass/app.scss */
+  /* line 377, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 316, ../sass/app.scss */
+  /* line 380, ../sass/app.scss */
   25% {
     background: yellow;
   }
 
-  /* line 319, ../sass/app.scss */
+  /* line 383, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 322, ../sass/app.scss */
+  /* line 386, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 325, ../sass/app.scss */
+  /* line 389, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 328, ../sass/app.scss */
+  /* line 392, ../sass/app.scss */
   75% {
     background: cyan;
   }
 
-  /* line 331, ../sass/app.scss */
+  /* line 395, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 334, ../sass/app.scss */
+  /* line 398, ../sass/app.scss */
   100% {
     background: lime;
   }
 }
 
 @keyframes booyah {
-  /* line 340, ../sass/app.scss */
+  /* line 404, ../sass/app.scss */
   0% {
     background: lime;
   }
 
-  /* line 343, ../sass/app.scss */
+  /* line 407, ../sass/app.scss */
   25% {
     background: yellow;
   }
 
-  /* line 346, ../sass/app.scss */
+  /* line 410, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 349, ../sass/app.scss */
+  /* line 413, ../sass/app.scss */
   50% {
     background: magenta;
   }
 
-  /* line 352, ../sass/app.scss */
+  /* line 416, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 355, ../sass/app.scss */
+  /* line 419, ../sass/app.scss */
   75% {
     background: cyan;
   }
 
-  /* line 358, ../sass/app.scss */
+  /* line 422, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 361, ../sass/app.scss */
+  /* line 425, ../sass/app.scss */
   100% {
     background: lime;
   }
