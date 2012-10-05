@@ -144,6 +144,7 @@ p.more {
 	width: 100%;
 	position: absolute;
 	bottom: 50px;
+	z-index: 3;
 	a {
 		color: $greydark;
 		font-size: 4rem;
@@ -190,6 +191,7 @@ p.more {
 	padding: 16px 10px 10px;
 	font-size: 2rem;
 }
+
 
 /* Nav Mobi */
 
@@ -238,6 +240,7 @@ ul.moreorless {
 	position: fixed;
 }
 
+
 /* Team */
 
 .team figure {
@@ -273,6 +276,7 @@ ul.moreorless {
 .touch .team figure img {
 	opacity: 1;
 }
+
 
 /* Animations */
 
@@ -310,6 +314,9 @@ ul.moreorless {
 	0% {
 		background: $black;
 	}
+	12.5% {
+		background: $green;
+	}
 	25% {
 		background: $yellow;
 	}
@@ -329,7 +336,7 @@ ul.moreorless {
 		background: $white;
 	}
 	100% {
-		background: $green;
+		background: $black;
 	}
 }
 
@@ -337,6 +344,9 @@ ul.moreorless {
 	0% {
 		background: $black;
 	}
+	12.5% {
+		background: $green;
+	}
 	25% {
 		background: $yellow;
 	}
@@ -356,7 +366,7 @@ ul.moreorless {
 		background: $white;
 	}
 	100% {
-		background: $green;
+		background: $black;
 	}
 }
 
@@ -364,6 +374,9 @@ ul.moreorless {
 	0% {
 		background: $black;
 	}
+	12.5% {
+		background: $green;
+	}
 	25% {
 		background: $yellow;
 	}
@@ -383,7 +396,7 @@ ul.moreorless {
 		background: $white;
 	}
 	100% {
-		background: $green;
+		background: $black;
 	}
 }
 
@@ -391,6 +404,9 @@ ul.moreorless {
 	0% {
 		background: $black;
 	}
+	12.5% {
+		background: $green;
+	}
 	25% {
 		background: $yellow;
 	}
@@ -410,7 +426,7 @@ ul.moreorless {
 		background: $white;
 	}
 	100% {
-		background: $green;
+		background: $black;
 	}
 }
 
