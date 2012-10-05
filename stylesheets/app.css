@@ -4203,7 +4203,7 @@ p.vevent abbr {
 /* Colors */
 /* line 27, ../sass/app.scss */
 body {
-  background: black url(../images/lights.png) repeat-y center top;
+  background: black url(../images/lights.png) repeat-y center -210%;
   -webkit-background-size: 200%;
   -moz-background-size: 200%;
   -o-background-size: 200%;
@@ -4224,65 +4224,66 @@ body {
 /* line 42, ../sass/app.scss */
 .row {
   margin-top: 12px;
-  /* 	margin-bottom: 12px; */
   padding: 15px 35px;
   border-radius: 10px;
 }
 
-/* line 49, ../sass/app.scss */
+/* line 48, ../sass/app.scss */
 .row.logo {
   margin-top: 0;
-  /* 	margin-bottom: 0; */
   padding: 0;
   border-radius: 0;
 }
 
-/* line 56, ../sass/app.scss */
+/* line 54, ../sass/app.scss */
 .row.intro {
   margin-top: 0;
   padding-top: 0;
   border-radius: 0 0 10px 10px;
 }
 
-/* line 62, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 .row.contact {
   margin-bottom: 50px;
   padding-top: 29px;
 }
 
-/* line 67, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
 .nav .row {
   margin-top: 0;
-  /* 	margin-bottom: 0; */
   padding: 15px 0 5px 0;
-  /* 	padding: 0; */
   background: none;
 }
 
-/* line 75, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 .fixed {
   position: fixed;
 }
 
 /* Typography */
-/* line 81, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 h1, h3, h5 {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
 }
 
-/* line 87, ../sass/app.scss */
+/* line 83, ../sass/app.scss */
 h2, h4, h6 {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 
-/* line 93, ../sass/app.scss */
+/* line 89, ../sass/app.scss */
 body, p {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
+}
+
+/* line 94, ../sass/app.scss */
+.intro h2 {
+  color: white;
 }
 
 /* line 98, ../sass/app.scss */
