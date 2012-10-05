@@ -8,8 +8,6 @@
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Droid+Serif:400,700);
 @import url(../webfonts/ss-standard.css);
-@import url(partials/animate.sass);
-
 
 /* Colors */
 
@@ -39,8 +37,7 @@ body {
 /* 	background: url(../images/black-gradient.png) repeat; */
 }
 
-
-/* Foundation Rows */
+/* Layout */
 
 .row {
 	margin-top: 12px;
@@ -63,6 +60,7 @@ body {
 }
 
 .row.contact {
+	margin-bottom: 50px;
 	padding-top: 29px;
 }
 
@@ -74,9 +72,9 @@ body {
 	background: none;
 }
 
-
-
-
+.fixed {
+	position: fixed;
+}
 
 /* Typography */
 
@@ -101,7 +99,6 @@ body, p {
 	font-size: 1.7rem;
 }
 
-
 /* Links */
 
 a {
@@ -121,7 +118,6 @@ p.more {
 	}
 }
 
-
 /* Product */
 
 #product {
@@ -131,8 +127,9 @@ p.more {
 	img {
 		margin: 0 auto;
 		background: $black;
+		line-height: 0;
 		display: block;
-		-webkit-animation: lightcloud 20s infinite 1s;
+		-webkit-animation: lightcloud 20s infinite;
 		-moz-animation: lightcloud 20s infinite 1s;
 		-ms-animation: lightcloud 20s infinite 1s;
 		-o-animation: lightcloud 20s infinite 1s;
@@ -156,7 +153,6 @@ p.more {
 		}
 	}
 }
-
 
 /* Nav */
 
@@ -182,6 +178,9 @@ p.more {
 					color: $white;
 					text-decoration: none;
 				}
+				&.current {
+					color: $white;
+				}
 			}
 		}
 	}
@@ -192,54 +191,33 @@ p.more {
 	font-size: 2rem;
 }
 
-
 /* Nav Mobi */
 
 .nav.show-for-small {
 	min-height: 54px;
-/* 	background: $black; */
-/* 	background: $black url(../images/lc.png) no-repeat 30px 0; */
-/* 	color: $white; */
-	ul {
+	ul.mobi {
+		padding: 0 35px;
+		display: none;
+		text-align: left;
 		li {
+			float: none;
 			a {
-/* 				color: $white; */
+				padding: 0;
+				display: block;
 			}
 		}
 	}
-}
-
-ul.mobi {
-	padding: 0 35px;
-	display: none;
-	text-align: left;
-	li {
-		float: none;
-		a {
-			padding: 0;
-			display: block;
+	ul.moreorless {
+		float: right;
+		.mobiless {
+			display: none;
+		}
+		li.mobiless, 
+		li.mobimore {
+			cursor: pointer;
 		}
 	}
 }
-
-ul.moreorless {
-/* 	display: inline; */
-	float: right;
-}
-
-.mobiless {
-	display: none;
-}
-
-.mobiless, 
-.mobimore {
-	cursor: pointer;
-}
-
-.fixed {
-	position: fixed;
-}
-
 
 /* Team */
 
@@ -276,7 +254,6 @@ ul.moreorless {
 .touch .team figure img {
 	opacity: 1;
 }
-
 
 /* Animations */
 
