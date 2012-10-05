@@ -1,5 +1,8 @@
 (function ($) {  
 	
+	// Layout Fix
+	initLayoutFix();
+	
 	// Foundation & Startup
 	$(function(){
 	
@@ -20,8 +23,6 @@
 		// $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
 		// $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
 		// $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
-		
-		initLayoutFix();
     
 	});
 	
