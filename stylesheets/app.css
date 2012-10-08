@@ -4204,7 +4204,12 @@ p.vevent abbr {
 /* Colors */
 /* line 28, ../sass/app.scss */
 body {
-  background: black url(../images/lights.png) repeat-y center 70px;
+  background: black;
+}
+
+/* line 32, ../sass/app.scss */
+#content {
+  background: black url(../images/lights.png) repeat-y 50% 250px;
   -webkit-background-size: 150%;
   -moz-background-size: 150%;
   -o-background-size: 150%;
@@ -4212,7 +4217,7 @@ body {
 }
 
 /* & Layout */
-/* line 35, ../sass/app.scss */
+/* line 39, ../sass/app.scss */
 .row {
   background: rgba(0, 0, 0, 0.8);
   margin-top: 12px;
@@ -4220,82 +4225,72 @@ body {
   border-radius: 10px;
 }
 
-/* line 42, ../sass/app.scss */
-.row.product {
-  /*
-  	background: $black;
-  	margin-top: 0;
-  	padding: 0;
-  	border-radius: 0;
-  */
-}
-
-/* line 51, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
 .row.logo {
   margin-top: 0;
   padding: 0;
   border-radius: 0;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 .row.intro {
   margin-top: 0;
   padding-top: 0;
   border-radius: 0 0 10px 10px;
 }
 
-/* line 63, ../sass/app.scss */
+/* line 58, ../sass/app.scss */
 .row.contact {
   margin-bottom: 50px;
   padding-top: 29px;
   padding-bottom: 0;
 }
 
-/* line 69, ../sass/app.scss */
+/* line 64, ../sass/app.scss */
 .nav .row {
   margin-top: 0;
   padding: 15px 0 5px 0;
   background: none;
 }
 
-/* line 75, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 .fixed {
   position: fixed;
 }
 
 /* Typography */
-/* line 81, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 h1, h3, h5 {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
 }
 
-/* line 87, ../sass/app.scss */
+/* line 82, ../sass/app.scss */
 h2, h4, h6 {
   color: #999999;
   font-family: 'Droid Serif', serif;
   font-weight: normal;
 }
 
-/* line 93, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 body, p {
   color: #999999;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 98, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 .intro h2 {
   color: white;
 }
 
-/* line 102, ../sass/app.scss */
+/* line 97, ../sass/app.scss */
 .intro p {
   font-size: 1.7rem;
 }
 
 /* Links */
-/* line 108, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 a {
   color: white;
   -webkit-transition-property: color;
@@ -4311,32 +4306,32 @@ a {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 113, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 a:hover {
   color: white;
 }
 
-/* line 118, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 p.more {
   color: white;
 }
-/* line 120, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 p.more:hover {
   cursor: pointer;
 }
 
 /* Product */
-/* line 127, ../sass/app.scss */
+/* line 122, ../sass/app.scss */
 #product {
   background: black;
   position: relative;
 }
-/* line 131, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 #product #shots img {
   margin: 0 auto;
   background: black;
-  line-height: 0;
   display: block;
+  line-height: 0;
   -webkit-animation: lightcloud 10s infinite 1s alternate;
   -moz-animation: lightcloud 10s infinite 1s alternate;
   -ms-animation: lightcloud 10s infinite 1s alternate;
@@ -4344,28 +4339,28 @@ p.more:hover {
   animation: lightcloud 10s infinite 1s alternate;
 }
 
-/* line 145, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 .down {
   width: 100%;
   position: absolute;
   bottom: 50px;
   z-index: 3;
 }
-/* line 150, ../sass/app.scss */
+/* line 145, ../sass/app.scss */
 .down a {
   color: #4a4a4a;
   font-size: 4rem;
   display: block;
   text-align: center;
 }
-/* line 155, ../sass/app.scss */
+/* line 150, ../sass/app.scss */
 .down a:hover {
   color: #777777;
   text-decoration: none;
 }
 
 /* Nav */
-/* line 164, ../sass/app.scss */
+/* line 159, ../sass/app.scss */
 .nav {
   background: #4a4a4a;
   color: #0d0d0d;
@@ -4376,85 +4371,85 @@ p.more:hover {
   text-align: center;
   z-index: 1;
 }
-/* line 173, ../sass/app.scss */
+/* line 168, ../sass/app.scss */
 .nav ul {
   margin-bottom: 0;
   display: inline-block;
 }
-/* line 176, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 .nav ul li {
   list-style: none;
   float: left;
 }
-/* line 179, ../sass/app.scss */
+/* line 174, ../sass/app.scss */
 .nav ul li a {
   padding: 18px 12px 16px;
   color: #0d0d0d;
 }
-/* line 182, ../sass/app.scss */
+/* line 177, ../sass/app.scss */
 .nav ul li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 186, ../sass/app.scss */
+/* line 181, ../sass/app.scss */
 .nav ul li a.current {
   color: white;
 }
 
-/* line 194, ../sass/app.scss */
+/* line 189, ../sass/app.scss */
 .nav a.ss-icon {
   padding: 16px 10px 10px;
   font-size: 2rem;
 }
 
 /* Nav Mobi */
-/* line 201, ../sass/app.scss */
+/* line 196, ../sass/app.scss */
 .nav.show-for-small {
   min-height: 54px;
 }
-/* line 203, ../sass/app.scss */
+/* line 198, ../sass/app.scss */
 .nav.show-for-small ul.mobi {
   padding: 0 35px;
   display: none;
   text-align: left;
 }
-/* line 207, ../sass/app.scss */
+/* line 202, ../sass/app.scss */
 .nav.show-for-small ul.mobi li {
   float: none;
 }
-/* line 209, ../sass/app.scss */
+/* line 204, ../sass/app.scss */
 .nav.show-for-small ul.mobi li a {
   padding: 0;
   display: block;
 }
-/* line 215, ../sass/app.scss */
+/* line 210, ../sass/app.scss */
 .nav.show-for-small ul.moreorless {
   float: right;
 }
-/* line 217, ../sass/app.scss */
+/* line 212, ../sass/app.scss */
 .nav.show-for-small ul.moreorless .mobiless {
   display: none;
 }
-/* line 221, ../sass/app.scss */
+/* line 216, ../sass/app.scss */
 .nav.show-for-small ul.moreorless li.mobiless,
 .nav.show-for-small ul.moreorless li.mobimore {
   cursor: pointer;
 }
 
 /* Team */
-/* line 229, ../sass/app.scss */
+/* line 224, ../sass/app.scss */
 .team figure {
   min-height: 350px;
   position: relative;
 }
-/* line 232, ../sass/app.scss */
+/* line 227, ../sass/app.scss */
 .team figure img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 239, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 .team figure img.off {
   opacity: 1;
   -webkit-transition-property: opacity;
@@ -4470,12 +4465,12 @@ p.more:hover {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 244, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
 .team figure img.off:hover {
   opacity: 0;
 }
 
-/* line 249, ../sass/app.scss */
+/* line 244, ../sass/app.scss */
 .team figure img.on {
   opacity: 0;
   -webkit-transition-property: opacity;
@@ -4491,23 +4486,23 @@ p.more:hover {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 254, ../sass/app.scss */
+/* line 249, ../sass/app.scss */
 .team figure img.on:hover {
   opacity: 1;
 }
 
-/* line 261, ../sass/app.scss */
+/* line 256, ../sass/app.scss */
 .team .twelve:hover figure img.on, .team .row .twelve:hover figure img.on, .row .team .twelve:hover figure img.on {
   opacity: 1;
 }
 
-/* line 267, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .touch .team figure img {
   opacity: 1;
 }
 
 /* Contact */
-/* line 273, ../sass/app.scss */
+/* line 268, ../sass/app.scss */
 p.twitter {
   margin-bottom: 0;
   background: transparent;
@@ -4515,312 +4510,311 @@ p.twitter {
   position: relative;
   top: -10px;
 }
-/* line 279, ../sass/app.scss */
+/* line 274, ../sass/app.scss */
 p.twitter a {
   color: #777777;
 }
-/* line 281, ../sass/app.scss */
+/* line 276, ../sass/app.scss */
 p.twitter a:hover {
   color: white;
 }
 
-/* Animations */
-/* LightCloud */
+/* LightCloud Animation */
 @-webkit-keyframes lightcloud {
-  /* line 291, ../sass/app.scss */
+  /* line 285, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 294, ../sass/app.scss */
+  /* line 288, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 297, ../sass/app.scss */
+  /* line 291, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 300, ../sass/app.scss */
+  /* line 294, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 303, ../sass/app.scss */
+  /* line 297, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 306, ../sass/app.scss */
+  /* line 300, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 309, ../sass/app.scss */
+  /* line 303, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 312, ../sass/app.scss */
+  /* line 306, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 315, ../sass/app.scss */
+  /* line 309, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-moz-keyframes lightcloud {
-  /* line 321, ../sass/app.scss */
+  /* line 315, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 324, ../sass/app.scss */
+  /* line 318, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 327, ../sass/app.scss */
+  /* line 321, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 330, ../sass/app.scss */
+  /* line 324, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 333, ../sass/app.scss */
+  /* line 327, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 336, ../sass/app.scss */
+  /* line 330, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 339, ../sass/app.scss */
+  /* line 333, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 342, ../sass/app.scss */
+  /* line 336, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 345, ../sass/app.scss */
+  /* line 339, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-ms-keyframes lightcloud {
-  /* line 351, ../sass/app.scss */
+  /* line 345, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 354, ../sass/app.scss */
+  /* line 348, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 357, ../sass/app.scss */
+  /* line 351, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 360, ../sass/app.scss */
+  /* line 354, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 363, ../sass/app.scss */
+  /* line 357, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 366, ../sass/app.scss */
+  /* line 360, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 369, ../sass/app.scss */
+  /* line 363, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 372, ../sass/app.scss */
+  /* line 366, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 375, ../sass/app.scss */
+  /* line 369, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-o-keyframes lightcloud {
-  /* line 381, ../sass/app.scss */
+  /* line 375, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 384, ../sass/app.scss */
+  /* line 378, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 387, ../sass/app.scss */
+  /* line 381, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 390, ../sass/app.scss */
+  /* line 384, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 393, ../sass/app.scss */
+  /* line 387, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 396, ../sass/app.scss */
+  /* line 390, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 399, ../sass/app.scss */
+  /* line 393, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 402, ../sass/app.scss */
+  /* line 396, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 405, ../sass/app.scss */
+  /* line 399, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @keyframes lightcloud {
-  /* line 411, ../sass/app.scss */
+  /* line 405, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 414, ../sass/app.scss */
+  /* line 408, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 417, ../sass/app.scss */
+  /* line 411, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 420, ../sass/app.scss */
+  /* line 414, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 423, ../sass/app.scss */
+  /* line 417, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 426, ../sass/app.scss */
+  /* line 420, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 429, ../sass/app.scss */
+  /* line 423, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 432, ../sass/app.scss */
+  /* line 426, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 435, ../sass/app.scss */
+  /* line 429, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
-/* Boom */
+/* Boom Animation */
 @-webkit-keyframes boom {
-  /* line 442, ../sass/app.scss */
+  /* line 437, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 445, ../sass/app.scss */
+  /* line 440, ../sass/app.scss */
   22% {
     background: lime;
   }
 
-  /* line 448, ../sass/app.scss */
+  /* line 443, ../sass/app.scss */
   44% {
     background: red;
   }
 
-  /* line 451, ../sass/app.scss */
+  /* line 446, ../sass/app.scss */
   66% {
     background: blue;
   }
 
-  /* line 454, ../sass/app.scss */
+  /* line 449, ../sass/app.scss */
   88% {
     background: white;
   }
 
-  /* line 457, ../sass/app.scss */
+  /* line 452, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-moz-keyframes boom {
-  /* line 463, ../sass/app.scss */
+  /* line 458, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 466, ../sass/app.scss */
+  /* line 461, ../sass/app.scss */
   22% {
     background: lime;
   }
 
-  /* line 469, ../sass/app.scss */
+  /* line 464, ../sass/app.scss */
   44% {
     background: red;
   }
 
-  /* line 472, ../sass/app.scss */
+  /* line 467, ../sass/app.scss */
   66% {
     background: blue;
   }
 
-  /* line 475, ../sass/app.scss */
+  /* line 470, ../sass/app.scss */
   88% {
     background: white;
   }
 
-  /* line 478, ../sass/app.scss */
+  /* line 473, ../sass/app.scss */
   100% {
     background: black;
   }

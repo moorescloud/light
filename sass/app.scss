@@ -26,7 +26,11 @@
 	$title: #999999;
 	
 body {
-	background: $black url(../images/lights.png) repeat-y center 70px;
+	background: $black;
+}
+
+#content {
+	background: $black url(../images/lights.png) repeat-y 50% 250px;
 	@include background-size(150%);
 }
 
@@ -37,15 +41,6 @@ body {
 	margin-top: 12px;
 	padding: 15px 35px;
 	border-radius: 10px;
-}
-
-.row.product {
-/*
-	background: $black;
-	margin-top: 0;
-	padding: 0;
-	border-radius: 0;
-*/
 }
 
 .row.logo {
@@ -131,8 +126,8 @@ p.more {
 		img {
 			margin: 0 auto;
 			background: $black;
-			line-height: 0;
 			display: block;
+			line-height: 0;
 			-webkit-animation: lightcloud 10s infinite 1s alternate;
 			-moz-animation: lightcloud 10s infinite 1s alternate;
 			-ms-animation: lightcloud 10s infinite 1s alternate;
@@ -284,9 +279,8 @@ p.twitter {
 	}
 }
 
-/* Animations */
+/* LightCloud Animation */
 
-/* LightCloud */
 @-webkit-keyframes lightcloud {
 	0% {
 		background: $black;
@@ -437,7 +431,8 @@ p.twitter {
 	}
 }
 
-/* Boom */
+/* Boom Animation */
+
 @-webkit-keyframes boom {
 	0% {
 		background: $black;
