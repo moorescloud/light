@@ -25,24 +25,26 @@
 	$title: #999999;
 	
 body {
-	background: $black url(../images/lights.png) repeat-y center -225%;
-	@include background-size(200%);
+	background: $black url(../images/lights.png) repeat-y center -10%;
+/* 	@include background-size(200%); */
 }
+
+/* & Layout */
 
 .row {
 	background: rgba(0, 0, 0, .8);
-}
-
-.no-rgba .row {
-/* 	background: url(../images/black-gradient.png) repeat; */
-}
-
-/* Layout */
-
-.row {
 	margin-top: 12px;
 	padding: 15px 35px;
 	border-radius: 10px;
+}
+
+.row.product {
+/*
+	background: $black;
+	margin-top: 0;
+	padding: 0;
+	border-radius: 0;
+*/
 }
 
 .row.logo {
@@ -121,19 +123,25 @@ p.more {
 /* Product */
 
 #product {
+/* 	margin: auto 0; */
 	background: $black;
-	width: 100%;
+/* 	width: 100%; */
+/* 	width: 950px; */
 	position: relative;
-	img {
-		margin: 0 auto;
-		background: $black;
-		line-height: 0;
-		display: block;
-		-webkit-animation: lightcloud 20s infinite;
-		-moz-animation: lightcloud 20s infinite 1s;
-		-ms-animation: lightcloud 20s infinite 1s;
-		-o-animation: lightcloud 20s infinite 1s;
-		animation: lightcloud 20s infinite 1s;
+	#shots {
+/* 		margin: auto 0; */
+/* 		max-width: 950px; */
+		img {
+			margin: 0 auto;
+			background: $black;
+			line-height: 0;
+			display: block;
+			-webkit-animation: lightcloud 10s infinite 1s alternate;
+			-moz-animation: lightcloud 10s infinite 1s alternate;
+			-ms-animation: lightcloud 10s infinite 1s alternate;
+			-o-animation: lightcloud 10s infinite 1s alternate;
+			animation: lightcloud 10s infinite 1s alternate;
+		}
 	}
 }
 
@@ -257,33 +265,31 @@ p.more {
 
 /* Animations */
 
+/* LightCloud */
 @-webkit-keyframes lightcloud {
 	0% {
 		background: $black;
 	}
-	11.1111% {
+	12.5% {
 		background: $green;
 	}
-	22.2222% {
+	25.0% {
 		background: $yellow;
 	}
-	33.3333% {
+	37.5% {
 		background: $red;
 	}
-	44.4444% {
+	50.0% {
 		background: $magenta;
 	}
-	55.5555% {
+	62.5% {
 		background: $blue;
 	}
-	66.6666% {
+	75.0% {
 		background: $cyan;
 	}
-	77.7777% {
+	87.5% {
 		background: $white;
-	}
-	88.8888% {
-		background: $black;
 	}
 	100% {
 		background: $black;
@@ -294,29 +300,26 @@ p.more {
 	0% {
 		background: $black;
 	}
-	11.1111% {
+	12.5% {
 		background: $green;
 	}
-	22.2222% {
+	25.0% {
 		background: $yellow;
 	}
-	33.3333% {
+	37.5% {
 		background: $red;
 	}
-	44.4444% {
+	50.0% {
 		background: $magenta;
 	}
-	55.5555% {
+	62.5% {
 		background: $blue;
 	}
-	66.6666% {
+	75.0% {
 		background: $cyan;
 	}
-	77.7777% {
+	87.5% {
 		background: $white;
-	}
-	88.8888% {
-		background: $black;
 	}
 	100% {
 		background: $black;
@@ -327,29 +330,26 @@ p.more {
 	0% {
 		background: $black;
 	}
-	11.1111% {
+	12.5% {
 		background: $green;
 	}
-	22.2222% {
+	25.0% {
 		background: $yellow;
 	}
-	33.3333% {
+	37.5% {
 		background: $red;
 	}
-	44.4444% {
+	50.0% {
 		background: $magenta;
 	}
-	55.5555% {
+	62.5% {
 		background: $blue;
 	}
-	66.6666% {
+	75.0% {
 		background: $cyan;
 	}
-	77.7777% {
+	87.5% {
 		background: $white;
-	}
-	88.8888% {
-		background: $black;
 	}
 	100% {
 		background: $black;
@@ -360,29 +360,26 @@ p.more {
 	0% {
 		background: $black;
 	}
-	11.1111% {
+	12.5% {
 		background: $green;
 	}
-	22.2222% {
+	25.0% {
 		background: $yellow;
 	}
-	33.3333% {
+	37.5% {
 		background: $red;
 	}
-	44.4444% {
+	50.0% {
 		background: $magenta;
 	}
-	55.5555% {
+	62.5% {
 		background: $blue;
 	}
-	66.6666% {
+	75.0% {
 		background: $cyan;
 	}
-	77.7777% {
+	87.5% {
 		background: $white;
-	}
-	88.8888% {
-		background: $black;
 	}
 	100% {
 		background: $black;
@@ -393,29 +390,69 @@ p.more {
 	0% {
 		background: $black;
 	}
-	11.1111% {
+	12.5% {
 		background: $green;
 	}
-	22.2222% {
+	25.0% {
 		background: $yellow;
 	}
-	33.3333% {
+	37.5% {
 		background: $red;
 	}
-	44.4444% {
+	50.0% {
 		background: $magenta;
 	}
-	55.5555% {
+	62.5% {
 		background: $blue;
 	}
-	66.6666% {
+	75.0% {
 		background: $cyan;
 	}
-	77.7777% {
+	87.5% {
 		background: $white;
 	}
-	88.8888% {
+	100% {
 		background: $black;
+	}
+}
+
+/* Boom */
+@-webkit-keyframes boom {
+	0% {
+		background: $black;
+	}
+	22% {
+		background: $green;
+	}
+	44% {
+		background: $red;
+	}
+	66% {
+		background: $blue;
+	}
+	88% {
+		background: $white;
+	}
+	100% {
+		background: $black;
+	}
+}
+
+@-moz-keyframes boom {
+	0% {
+		background: $black;
+	}
+	22% {
+		background: $green;
+	}
+	44% {
+		background: $red;
+	}
+	66% {
+		background: $blue;
+	}
+	88% {
+		background: $white;
 	}
 	100% {
 		background: $black;
