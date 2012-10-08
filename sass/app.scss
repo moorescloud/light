@@ -30,6 +30,8 @@ body {
 }
 
 #content {
+	margin-bottom: -100px;
+	padding-bottom: 150px;
 	background: $black url(../images/lights.png) repeat-y 50% 250px;
 	@include background-size(150%);
 }
