@@ -7,6 +7,7 @@
 @import "settings";
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Droid+Serif:400,700);
+@import url(../webfonts/ss-social.css);
 @import url(../webfonts/ss-standard.css);
 
 /* Colors */
@@ -26,7 +27,7 @@
 	
 body {
 	background: $black url(../images/lights.png) repeat-y center 70px;
-/* 	@include background-size(200%); */
+	@include background-size(150%);
 }
 
 /* & Layout */
@@ -62,6 +63,7 @@ body {
 .row.contact {
 	margin-bottom: 50px;
 	padding-top: 29px;
+	padding-bottom: 0;
 }
 
 .nav .row {
@@ -123,14 +125,9 @@ p.more {
 /* Product */
 
 #product {
-/* 	margin: auto 0; */
 	background: $black;
-/* 	width: 100%; */
-/* 	width: 950px; */
 	position: relative;
 	#shots {
-/* 		margin: auto 0; */
-/* 		max-width: 950px; */
 		img {
 			margin: 0 auto;
 			background: $black;
@@ -259,8 +256,32 @@ p.more {
 	}
 }
 
+.team .twelve {
+	&:hover {
+		figure img.on {
+			opacity: 1;
+		}
+	}
+}
+
 .touch .team figure img {
 	opacity: 1;
+}
+
+/* Contact */
+
+p.twitter {
+	margin-bottom: 0;
+	background: transparent;
+	font-size: 3rem;
+	position: relative;
+	top: -10px;
+	a {
+		color: $greylight;
+		&:hover {
+			color: $white;
+		}
+	}
 }
 
 /* Animations */
