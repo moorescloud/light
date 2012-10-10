@@ -4205,11 +4205,8 @@ p.vevent abbr {
 /* line 28, ../sass/app.scss */
 body {
   /* 	background: $black; */
-  background: black url(../images/lights.png) repeat-y 50% -100px;
-  -webkit-background-size: 150%;
-  -moz-background-size: 150%;
-  -o-background-size: 150%;
-  background-size: 150%;
+  background: black url(../images/lights.png) repeat-y 50% -170px;
+  /* 	@include background-size(100%); */
 }
 
 /* line 34, ../sass/app.scss */

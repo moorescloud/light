@@ -27,8 +27,8 @@
 	
 body {
 /* 	background: $black; */
-	background: $black url(../images/lights.png) repeat-y 50% -100px;
-	@include background-size(150%);
+	background: $black url(../images/lights.png) repeat-y 50% -170px;
+/* 	@include background-size(100%); */
 }
 
 #content {
