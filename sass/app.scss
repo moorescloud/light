@@ -85,8 +85,11 @@ body, p {
 	font-family: 'Droid Sans', sans-serif;
 }
 
-.intro h2 {
+.intro h2, 
+.intro h3, 
+.intro p {
 	color: $white;
+	@include text-shadow (rgba($black, .3) 1px 1px 0);
 }
 
 .intro p {
