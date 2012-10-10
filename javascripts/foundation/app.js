@@ -94,21 +94,21 @@
 	// More & Moar
 	$('.moar').hide();
 	$('.more').click(function(){
-		$(this).addClass('open').fadeOut('slow').parent().parent().next().slideDown();
+		$(this).addClass('open').slideUp('slow').parent().parent().next().slideDown('slow');
     });
     $('.less').click(function(){
 		$(this).parent().parent().fadeOut();
-		$('.open').fadeIn().removeClass('open');
+		$('.open').slideDown('slow').removeClass('open');
     });
     
     // Slip & Slide
     $('.slider').hide();
     $('.slip').click(function(){
-		$(this).addClass('slid').fadeOut('slow').next().slideDown();
+		$(this).addClass('slid').slideUp('slow').next().slideDown('slow');
     });
     $('.slide').click(function(){
 		$(this).parent().slideUp();
-		$('.slid').fadeIn().removeClass('slid');
+		$('.slid').slideDown('slow').removeClass('slid');
     });
     
 	
