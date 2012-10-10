@@ -1,4 +1,4 @@
-(function ($) {  
+(function ($) {
 	
 	// Layout Fix
 	initLayoutFix();
@@ -51,11 +51,11 @@
 	
 	// Fixed Nav
 	var productHeight = $('#product').outerHeight();
-	var navHeight = $('#product').outerHeight();
+	// var navHeight = $('#product').outerHeight();
     $(window).scroll(function(){
         if ($(window).scrollTop() > $(window).height()){
 	        $('.nav').addClass('fixed').css('top','0');
-	        $('#content').css('padding-top', '52px');
+	        $('#content').css('padding-top', '54px');
         } else {
             $('.nav').removeClass('fixed');
             $('#content').css('padding-top','0');
@@ -63,8 +63,10 @@
     });
     
     // Scroll
-    $('#product, .nav').localScroll({
-		offset: -52
+    $('#product').localScroll();
+	
+	$('.nav').localScroll({
+		offset: -54
 	});
 	
 	// Mobile Nav
