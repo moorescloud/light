@@ -106,10 +106,17 @@ a {
 	}
 }
 
-p.more {
+p.more, p.less,
+p.slip, p.slide {
 	color: $white;
 	&:hover {
 		cursor: pointer;
+	}
+	a {
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 

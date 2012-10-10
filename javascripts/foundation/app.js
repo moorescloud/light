@@ -69,6 +69,10 @@
 		offset: -54
 	});
 	
+	$('.less').localScroll({
+		offset: -54
+	});
+	
 	// Mobile Nav
 	$('.mobimore').click(function(){
 		$('.mobimore').hide();
@@ -90,8 +94,23 @@
 	// More & Moar
 	$('.moar').hide();
 	$('.more').click(function(){
-		$(this).next().slideToggle();
-    });	
+		$(this).addClass('open').fadeOut('slow').parent().parent().next().slideDown();
+    });
+    $('.less').click(function(){
+		$(this).parent().parent().fadeOut();
+		$('.open').fadeIn().removeClass('open');
+    });
+    
+    // Slip & Slide
+    $('.slider').hide();
+    $('.slip').click(function(){
+		$(this).addClass('slid').fadeOut('slow').next().slideDown();
+    });
+    $('.slide').click(function(){
+		$(this).parent().slideUp();
+		$('.slid').fadeIn().removeClass('slid');
+    });
+    
 	
 	// C’est Fin!
 	
