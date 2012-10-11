@@ -279,10 +279,10 @@ p.slip, p.slide {
 	padding-top: 30px;
 }
 
-.twitter, .facebook {
-	font-size: 2.5rem;
+.contact .social span {
+	font-size: 4rem;
 	a {
-		padding: 0 5px;
+		padding: 7px 5px;
 		color: $greylight;
 		float: right;
 		&:hover {

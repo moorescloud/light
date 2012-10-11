@@ -4521,17 +4521,17 @@ p.slip a:hover, p.slide a:hover {
 }
 
 /* line 282, ../sass/app.scss */
-.twitter, .facebook {
-  font-size: 2.5rem;
+.contact .social span {
+  font-size: 4rem;
 }
 /* line 284, ../sass/app.scss */
-.twitter a, .facebook a {
-  padding: 0 5px;
+.contact .social span a {
+  padding: 7px 5px;
   color: #777777;
   float: right;
 }
 /* line 288, ../sass/app.scss */
-.twitter a:hover, .facebook a:hover {
+.contact .social span a:hover {
   color: white;
 }
 
