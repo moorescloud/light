@@ -1,8 +1,5 @@
 (function ($) {
 	
-	// Layout Fix
-	initLayoutFix();
-	
 	// Foundation & Startup
 	$(function(){
 	
@@ -27,6 +24,7 @@
 	});
 	
 	// Product
+	initLayoutFix();
 	function initLayoutFix(){
 		var viewport = $(window);
 		var product = $('#product');

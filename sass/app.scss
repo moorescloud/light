@@ -1,5 +1,5 @@
 /* LightCloud
-	@project: LightCloud™
+	@project: Light by MooresCloud
 	@author: @3Easy
 	@domain: lightcloud.co
 */
@@ -26,22 +26,24 @@
 	$title: #999999;
 	
 body {
-/* 	background: $black; */
-	background: $black url(../images/lights.png) repeat-y 50% -170px;
-/* 	@include background-size(100%); */
-}
-
-#content {
-	margin-bottom: -54px;
-	padding-bottom: 150px;
+	background: $black;
 }
 
 .black {
 	background: $black;
 }
 
+.lights {
+	background: $black url(../images/lights.png) repeat-y 50% -470px;
+	padding-bottom: 150px;
+}
+
 .fade {
 	background: transparent url(../images/fade.png) repeat-x 0 0;
+}
+
+#content {
+	
 }
 
 /* Layout */
@@ -60,6 +62,7 @@ body {
 
 .panel.callout {
 	border: none;
+	padding-top: 30px;
 	padding-bottom: 0;
 	background: none;
 	@include box-shadow(none);
@@ -89,15 +92,23 @@ body, p {
 	font-family: 'Droid Sans', sans-serif;
 }
 
-.intro h2, 
-.intro h3, 
-.intro p {
+.intro h2 {
 	color: $white;
-	@include text-shadow (rgba($black, .3) 1px 1px 0);
+	text-align: right;
+	@include text-shadow (rgba($black, .35) 1px 1px 0);
+}
+
+.intro h3 {
+	color: $white;
+	text-align: right;
+	@include text-shadow (rgba($black, .35) 1px 1px 0);
 }
 
 .intro p {
-	font-size: 1.7rem;
+	color: $black;
+	text-align: right;
+	font-size: 2rem;
+	@include text-shadow (rgba($white, .35) 1px 1px 0);
 }
 
 /* Links */
