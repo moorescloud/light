@@ -3,7 +3,7 @@
 ## MooresLights
 
   Standards: HTML5, CSS3, JavaScript
-  Components: jQuery, Orbit, Reveal
-  Software: Sublime Text 2, Git, Beanstalk
+  Components: jQuery, Foundation, Orbit, Reveal
+  Software: Coda, Git, Beanstalk, Photoshop, Pixelmator, xScope
   Hardware: Retina MacBook Pro, GridServer from MediaTemple
   People: Mark Pesce, Daniel James Lynch, Paul Bridgestock
