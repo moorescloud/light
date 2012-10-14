@@ -111,6 +111,10 @@ body, p {
 	@include text-shadow (rgba($white, .35) 1px 1px 0);
 }
 
+.media p a {
+	font-size: 2rem;
+}
+
 /* Links */
 
 a {
