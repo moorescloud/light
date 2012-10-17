@@ -8,6 +8,10 @@
 
 (function ($) {
 	
+	// Turn Me On
+	// $('#nav, #content').hide();
+	
+	
 	// Foundation & Startup
 	$(function(){
 	
@@ -54,6 +58,9 @@
 		advanceSpeed: 10000, 
 		directionalNav: false
 	});
+	
+	// Turn Me On
+	// $('#nav, #content').show();
 	
 	// Fixed Nav
 	var productHeight = $('#product').outerHeight();
@@ -121,3 +128,7 @@
 	// C’est Fin!
 	
 })(jQuery);
+
+$(window).load(function(){
+	$('#nav, #content').fadeIn('slow');
+});
