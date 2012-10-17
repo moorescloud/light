@@ -1,3 +1,11 @@
+/*
+	@project: Light by Moore’sCloud
+	@author: @3Easy
+	@domain: moorescloud.com
+	@file: JavaScript
+	
+*/
+
 (function ($) {
 	
 	// Foundation & Startup
