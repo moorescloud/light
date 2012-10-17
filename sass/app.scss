@@ -2,7 +2,7 @@
 	@project: Light by Moore’sCloud
 	@author: @3Easy
 	@domain: moorescloud.com
-	@file: Sass CSS
+	@file: Sassy CSS3
 	
 */
 
@@ -27,10 +27,7 @@
 	$white: #ffffff;
 	$title: #999999;
 	
-body {
-	background: $black;
-}
-
+body, 
 .black {
 	background: $black;
 }
@@ -44,19 +41,21 @@ body {
 	background: transparent url(../images/fade.png) repeat-x 0 0;
 }
 
-#content {
-	
-}
 
 /* Layout */
+
+.js #nav, 
+.js #content {
+	display: none;
+}
 
 .no-js #nav, 
 .no-js #content {
 	display: block;
 }
 
-.row {
-	
+.fixed {
+	position: fixed;
 }
 
 .panel {
@@ -73,11 +72,6 @@ body {
 	padding-bottom: 0;
 	background: none;
 	@include box-shadow(none);
-	
-}
-
-.fixed {
-	position: fixed;
 }
 
 /* Typography */
@@ -116,10 +110,6 @@ body, p {
 	text-align: right;
 	font-size: 2rem;
 	@include text-shadow (rgba($white, .35) 1px 1px 0);
-}
-
-.media p a {
-/* 	font-size: 2rem; */
 }
 
 /* Links */
@@ -459,50 +449,6 @@ p.slip, p.slide {
 		background: $cyan;
 	}
 	87.5% {
-		background: $white;
-	}
-	100% {
-		background: $black;
-	}
-}
-
-/* Boom Animation */
-
-@-webkit-keyframes boom {
-	0% {
-		background: $black;
-	}
-	22% {
-		background: $green;
-	}
-	44% {
-		background: $red;
-	}
-	66% {
-		background: $blue;
-	}
-	88% {
-		background: $white;
-	}
-	100% {
-		background: $black;
-	}
-}
-
-@-moz-keyframes boom {
-	0% {
-		background: $black;
-	}
-	22% {
-		background: $green;
-	}
-	44% {
-		background: $red;
-	}
-	66% {
-		background: $blue;
-	}
-	88% {
 		background: $white;
 	}
 	100% {
