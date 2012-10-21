@@ -116,7 +116,7 @@ body, p {
 
 a {
 	color: $white;
-	@include transition-property(color);
+	@include transition-property(all);
 	@include transition-duration(.25s);
 	@include transition-timing-function(linear);
 	&:hover {
@@ -296,7 +296,7 @@ p.slip, p.slide {
 .contact .social span {
 	font-size: 4rem;
 	a {
-		padding: 7px 5px;
+		padding: 15px 5px;
 		color: $greylight;
 		float: right;
 		&:hover {
