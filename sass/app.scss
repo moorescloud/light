@@ -35,9 +35,6 @@ body,
 .lights {
 	background: $black url(../images/lights.png) repeat-y 50% -470px;
 	padding-bottom: 150px;
-	.lt-ie9 & {
-		background-color: $green;
-	}
 }
 
 .fade {
@@ -160,6 +157,9 @@ p.slip, p.slide {
 			-o-animation: lightcloud 10s infinite 1s alternate;
 			animation: lightcloud 10s infinite 1s alternate;
 			-webkit-transform: rotateZ(0deg);
+			.lt-ie9 & {
+				background-color: $green;
+			}
 		}
 	}
 	#down {
