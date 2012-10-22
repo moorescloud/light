@@ -199,8 +199,6 @@ p.slip, p.slide {
 	}
 }
 
-
-
 /* Nav */
 
 .nav {
@@ -325,6 +323,42 @@ p.slip, p.slide {
 	}
 	.lt-ie9 & {
 		font-size: 40px;
+	}
+}
+
+/* Reveal Modal */
+
+.modal {
+	.ss-icon {
+		font-size: 2rem;
+		color: $greylight;
+		float: right;
+		@include transition-property(all);
+		@include transition-duration(.25s);
+		@include transition-timing-function(linear);
+	}
+	&:hover {
+		.ss-icon {
+			color: $white;
+		}
+	}
+}
+
+.reveal-modal {
+	background: transparent;
+	@include box-shadow(inherit);
+}
+
+.reveal-modal-bg {
+	background: rgb(0, 0, 0);
+	background: rgba($black, .75);
+}
+
+.close-reveal-modal.ss-icon {
+	color: $white;
+	@include text-shadow(none);
+	&:hover {
+		text-decoration: none;
 	}
 }
 

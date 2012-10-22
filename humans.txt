@@ -1,9 +1,9 @@
 # www.humanstxt.org
 
-## MooresLights
+## MooresCloud
 
   Standards: HTML5, CSS3, JavaScript
   Components: jQuery, Foundation, Orbit, Reveal
-  Software: Coda, Git, Beanstalk, Photoshop, Pixelmator, xScope
+  Software: Coda, Terminal, Git, Beanstalk, Photoshop, Pixelmator, xScope
   Hardware: Retina MacBook Pro, GridServer from MediaTemple
-  People: Mark Pesce, Daniel James Lynch, Paul Bridgestock
+  People: Mark Pesce, Daniel James Lynch, Paul Bridgestock, Kate Carruthers, Kean Maizels, Breton Slivka, Robert Tiller
