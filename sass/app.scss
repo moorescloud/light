@@ -77,6 +77,11 @@ body,
 	padding-bottom: 0;
 	background: none;
 	@include box-shadow(none);
+	.lt-ie9 & {
+		background: transparent;
+		filter: inherit;
+		zoom: 1;
+	}
 }
 
 /* Typography */
