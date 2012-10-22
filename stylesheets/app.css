@@ -4253,7 +4253,7 @@ body,
 }
 /* line 67, ../sass/app.scss */
 .lt-ie9 .panel {
-  background: transparent;
+  background: black;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
   zoom: 1;
 }
