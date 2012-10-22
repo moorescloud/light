@@ -65,8 +65,8 @@ body,
 	background: rgba(0, 0, 0, .8);
 	@include border-radius(10px);
 	.lt-ie9 & {
-		background: $black;
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000); 
 		zoom: 1;
 	}
 }
