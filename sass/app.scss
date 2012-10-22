@@ -186,6 +186,9 @@ p.slip, p.slide {
 				color: $greylight;
 				text-decoration: none;
 			}
+			.lt-ie9 & {
+				font-size: 40px;
+			}
 		}
 	}
 	.orbit {
