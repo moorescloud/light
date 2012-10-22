@@ -4571,238 +4571,242 @@ p.slip a:hover, p.slide a:hover {
 .contact .social span a:hover {
   color: white;
 }
+/* line 320, ../sass/app.scss */
+.lt-ie9 .contact .social span {
+  font-size: 40px;
+}
 
 /* LightCloud Animation */
 @-webkit-keyframes lightcloud {
-  /* line 325, ../sass/app.scss */
+  /* line 328, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 328, ../sass/app.scss */
+  /* line 331, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 331, ../sass/app.scss */
+  /* line 334, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 334, ../sass/app.scss */
+  /* line 337, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 337, ../sass/app.scss */
+  /* line 340, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 340, ../sass/app.scss */
+  /* line 343, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 343, ../sass/app.scss */
+  /* line 346, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 346, ../sass/app.scss */
+  /* line 349, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 349, ../sass/app.scss */
+  /* line 352, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-moz-keyframes lightcloud {
-  /* line 355, ../sass/app.scss */
+  /* line 358, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 358, ../sass/app.scss */
+  /* line 361, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 361, ../sass/app.scss */
+  /* line 364, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 364, ../sass/app.scss */
+  /* line 367, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 367, ../sass/app.scss */
+  /* line 370, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 370, ../sass/app.scss */
+  /* line 373, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 373, ../sass/app.scss */
+  /* line 376, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 376, ../sass/app.scss */
+  /* line 379, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 379, ../sass/app.scss */
+  /* line 382, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-ms-keyframes lightcloud {
-  /* line 385, ../sass/app.scss */
+  /* line 388, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 388, ../sass/app.scss */
+  /* line 391, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 391, ../sass/app.scss */
+  /* line 394, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 394, ../sass/app.scss */
+  /* line 397, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 397, ../sass/app.scss */
+  /* line 400, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 400, ../sass/app.scss */
+  /* line 403, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 403, ../sass/app.scss */
+  /* line 406, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 406, ../sass/app.scss */
+  /* line 409, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 409, ../sass/app.scss */
+  /* line 412, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-o-keyframes lightcloud {
-  /* line 415, ../sass/app.scss */
+  /* line 418, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 418, ../sass/app.scss */
+  /* line 421, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 421, ../sass/app.scss */
+  /* line 424, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 424, ../sass/app.scss */
+  /* line 427, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 427, ../sass/app.scss */
+  /* line 430, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 430, ../sass/app.scss */
+  /* line 433, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 433, ../sass/app.scss */
+  /* line 436, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 436, ../sass/app.scss */
+  /* line 439, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 439, ../sass/app.scss */
+  /* line 442, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @keyframes lightcloud {
-  /* line 445, ../sass/app.scss */
+  /* line 448, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 448, ../sass/app.scss */
+  /* line 451, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 451, ../sass/app.scss */
+  /* line 454, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 454, ../sass/app.scss */
+  /* line 457, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 457, ../sass/app.scss */
+  /* line 460, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 460, ../sass/app.scss */
+  /* line 463, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 463, ../sass/app.scss */
+  /* line 466, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 466, ../sass/app.scss */
+  /* line 469, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 469, ../sass/app.scss */
+  /* line 472, ../sass/app.scss */
   100% {
     background: black;
   }

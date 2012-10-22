@@ -317,6 +317,9 @@ p.slip, p.slide {
 			color: $white;
 		}
 	}
+	.lt-ie9 & {
+		font-size: 40px;
+	}
 }
 
 /* LightCloud Animation */
