@@ -4317,9 +4317,13 @@ body, p {
   font-size: 2rem;
   text-shadow: rgba(255, 255, 255, 0.35) 1px 1px 0;
 }
+/* line 123, ../sass/app.scss */
+.lt-ie9 .intro p {
+  font-size: 20px;
+}
 
 /* Links */
-/* line 127, ../sass/app.scss */
+/* line 130, ../sass/app.scss */
 a {
   color: white;
   -webkit-transition-property: all;
@@ -4335,40 +4339,40 @@ a {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 132, ../sass/app.scss */
+/* line 135, ../sass/app.scss */
 a:hover {
   color: white;
   text-decoration: underline;
 }
 
-/* line 139, ../sass/app.scss */
+/* line 142, ../sass/app.scss */
 p.more, p.less,
 p.slip, p.slide {
   color: white;
 }
-/* line 141, ../sass/app.scss */
+/* line 144, ../sass/app.scss */
 p.more:hover, p.less:hover,
 p.slip:hover, p.slide:hover {
   cursor: pointer;
 }
-/* line 144, ../sass/app.scss */
+/* line 147, ../sass/app.scss */
 p.more a, p.less a,
 p.slip a, p.slide a {
   display: block;
 }
-/* line 146, ../sass/app.scss */
+/* line 149, ../sass/app.scss */
 p.more a:hover, p.less a:hover,
 p.slip a:hover, p.slide a:hover {
   text-decoration: none;
 }
 
 /* Product */
-/* line 154, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 #product {
   background: black;
   position: relative;
 }
-/* line 158, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 #product #shots img {
   margin: 0 auto;
   border-style: none;
@@ -4382,40 +4386,40 @@ p.slip a:hover, p.slide a:hover {
   animation: lightcloud 10s infinite 1s alternate;
   -webkit-transform: rotateZ(0deg);
 }
-/* line 170, ../sass/app.scss */
+/* line 173, ../sass/app.scss */
 .lt-ie9 #product #shots img {
   background-color: lime;
 }
-/* line 175, ../sass/app.scss */
+/* line 178, ../sass/app.scss */
 #product #down {
   width: 100%;
   position: absolute;
   bottom: 50px;
   z-index: 3;
 }
-/* line 180, ../sass/app.scss */
+/* line 183, ../sass/app.scss */
 #product #down a {
   color: #4a4a4a;
   font-size: 4rem;
   display: block;
   text-align: center;
 }
-/* line 185, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 #product #down a:hover {
   color: #777777;
   text-decoration: none;
 }
-/* line 189, ../sass/app.scss */
+/* line 192, ../sass/app.scss */
 .lt-ie9 #product #down a {
   font-size: 40px;
 }
-/* line 194, ../sass/app.scss */
+/* line 197, ../sass/app.scss */
 #product .orbit {
   margin-bottom: 0;
 }
 
 /* Nav */
-/* line 203, ../sass/app.scss */
+/* line 206, ../sass/app.scss */
 .nav {
   background: #4a4a4a;
   color: #0d0d0d;
@@ -4425,77 +4429,77 @@ p.slip a:hover, p.slide a:hover {
   text-align: center;
   z-index: 4;
 }
-/* line 211, ../sass/app.scss */
+/* line 214, ../sass/app.scss */
 .nav ul {
   margin: 15px 0 5px;
   display: inline-block;
 }
-/* line 214, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 .nav ul li {
   list-style: none;
   float: left;
 }
-/* line 217, ../sass/app.scss */
+/* line 220, ../sass/app.scss */
 .nav ul li a {
   padding: 18px 12px 20px;
   color: #0d0d0d;
 }
-/* line 220, ../sass/app.scss */
+/* line 223, ../sass/app.scss */
 .nav ul li a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 224, ../sass/app.scss */
+/* line 227, ../sass/app.scss */
 .nav ul li a.current {
   color: white;
 }
 
-/* line 232, ../sass/app.scss */
+/* line 235, ../sass/app.scss */
 .nav a.ss-icon {
   padding: 17px 10px 10px;
   font-size: 2rem;
 }
 
-/* line 237, ../sass/app.scss */
+/* line 240, ../sass/app.scss */
 .nav.show-for-small {
   min-height: 54px;
 }
-/* line 239, ../sass/app.scss */
+/* line 242, ../sass/app.scss */
 .nav.show-for-small ul.mobi {
   padding: 0 35px;
   display: none;
   text-align: left;
 }
-/* line 243, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 .nav.show-for-small ul.mobi li {
   float: none;
 }
-/* line 245, ../sass/app.scss */
+/* line 248, ../sass/app.scss */
 .nav.show-for-small ul.mobi li a {
   padding: 0;
   display: block;
 }
-/* line 251, ../sass/app.scss */
+/* line 254, ../sass/app.scss */
 .nav.show-for-small ul.moreorless {
   float: right;
 }
-/* line 253, ../sass/app.scss */
+/* line 256, ../sass/app.scss */
 .nav.show-for-small ul.moreorless .mobiless {
   display: none;
 }
-/* line 257, ../sass/app.scss */
+/* line 260, ../sass/app.scss */
 .nav.show-for-small ul.moreorless li.mobiless,
 .nav.show-for-small ul.moreorless li.mobimore {
   cursor: pointer;
 }
 
 /* Team */
-/* line 265, ../sass/app.scss */
+/* line 268, ../sass/app.scss */
 .team figure {
   min-height: 350px;
   position: relative;
 }
-/* line 268, ../sass/app.scss */
+/* line 271, ../sass/app.scss */
 .team figure img {
   border: none;
   position: absolute;
@@ -4503,7 +4507,7 @@ p.slip a:hover, p.slide a:hover {
   left: 0;
 }
 
-/* line 276, ../sass/app.scss */
+/* line 279, ../sass/app.scss */
 .team figure img.off {
   opacity: 1;
   -webkit-transition-property: opacity;
@@ -4519,12 +4523,12 @@ p.slip a:hover, p.slide a:hover {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 281, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 .team figure img.off:hover {
   opacity: 0;
 }
 
-/* line 286, ../sass/app.scss */
+/* line 289, ../sass/app.scss */
 .team figure img.on {
   opacity: 0;
   -webkit-transition-property: opacity;
@@ -4540,277 +4544,277 @@ p.slip a:hover, p.slide a:hover {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 291, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 .team figure img.on:hover {
   opacity: 1;
 }
 
-/* line 298, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 .team .row:hover figure img.on {
   opacity: 1;
 }
 
-/* line 304, ../sass/app.scss */
+/* line 307, ../sass/app.scss */
 .touch .team figure img {
   opacity: 1;
 }
 
 /* Contact */
-/* line 309, ../sass/app.scss */
+/* line 312, ../sass/app.scss */
 .contact .row {
   padding-top: 30px;
 }
 
-/* line 313, ../sass/app.scss */
+/* line 316, ../sass/app.scss */
 .contact .social span {
   font-size: 4rem;
 }
-/* line 315, ../sass/app.scss */
+/* line 318, ../sass/app.scss */
 .contact .social span a {
   padding: 15px 5px;
   color: #777777;
   float: right;
 }
-/* line 319, ../sass/app.scss */
+/* line 322, ../sass/app.scss */
 .contact .social span a:hover {
   color: white;
 }
-/* line 323, ../sass/app.scss */
+/* line 326, ../sass/app.scss */
 .lt-ie9 .contact .social span {
   font-size: 40px;
 }
 
 /* LightCloud Animation */
 @-webkit-keyframes lightcloud {
-  /* line 331, ../sass/app.scss */
+  /* line 334, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 334, ../sass/app.scss */
+  /* line 337, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 337, ../sass/app.scss */
+  /* line 340, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 340, ../sass/app.scss */
+  /* line 343, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 343, ../sass/app.scss */
+  /* line 346, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 346, ../sass/app.scss */
+  /* line 349, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 349, ../sass/app.scss */
+  /* line 352, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 352, ../sass/app.scss */
+  /* line 355, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 355, ../sass/app.scss */
+  /* line 358, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-moz-keyframes lightcloud {
-  /* line 361, ../sass/app.scss */
+  /* line 364, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 364, ../sass/app.scss */
+  /* line 367, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 367, ../sass/app.scss */
+  /* line 370, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 370, ../sass/app.scss */
+  /* line 373, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 373, ../sass/app.scss */
+  /* line 376, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 376, ../sass/app.scss */
+  /* line 379, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 379, ../sass/app.scss */
+  /* line 382, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 382, ../sass/app.scss */
+  /* line 385, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 385, ../sass/app.scss */
+  /* line 388, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-ms-keyframes lightcloud {
-  /* line 391, ../sass/app.scss */
+  /* line 394, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 394, ../sass/app.scss */
+  /* line 397, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 397, ../sass/app.scss */
+  /* line 400, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 400, ../sass/app.scss */
+  /* line 403, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 403, ../sass/app.scss */
+  /* line 406, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 406, ../sass/app.scss */
+  /* line 409, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 409, ../sass/app.scss */
+  /* line 412, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 412, ../sass/app.scss */
+  /* line 415, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 415, ../sass/app.scss */
+  /* line 418, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @-o-keyframes lightcloud {
-  /* line 421, ../sass/app.scss */
+  /* line 424, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 424, ../sass/app.scss */
+  /* line 427, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 427, ../sass/app.scss */
+  /* line 430, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 430, ../sass/app.scss */
+  /* line 433, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 433, ../sass/app.scss */
+  /* line 436, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 436, ../sass/app.scss */
+  /* line 439, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 439, ../sass/app.scss */
+  /* line 442, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 442, ../sass/app.scss */
+  /* line 445, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 445, ../sass/app.scss */
+  /* line 448, ../sass/app.scss */
   100% {
     background: black;
   }
 }
 
 @keyframes lightcloud {
-  /* line 451, ../sass/app.scss */
+  /* line 454, ../sass/app.scss */
   0% {
     background: black;
   }
 
-  /* line 454, ../sass/app.scss */
+  /* line 457, ../sass/app.scss */
   12.5% {
     background: lime;
   }
 
-  /* line 457, ../sass/app.scss */
+  /* line 460, ../sass/app.scss */
   25.0% {
     background: yellow;
   }
 
-  /* line 460, ../sass/app.scss */
+  /* line 463, ../sass/app.scss */
   37.5% {
     background: red;
   }
 
-  /* line 463, ../sass/app.scss */
+  /* line 466, ../sass/app.scss */
   50.0% {
     background: magenta;
   }
 
-  /* line 466, ../sass/app.scss */
+  /* line 469, ../sass/app.scss */
   62.5% {
     background: blue;
   }
 
-  /* line 469, ../sass/app.scss */
+  /* line 472, ../sass/app.scss */
   75.0% {
     background: cyan;
   }
 
-  /* line 472, ../sass/app.scss */
+  /* line 475, ../sass/app.scss */
   87.5% {
     background: white;
   }
 
-  /* line 475, ../sass/app.scss */
+  /* line 478, ../sass/app.scss */
   100% {
     background: black;
   }
