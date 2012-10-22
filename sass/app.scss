@@ -35,6 +35,9 @@ body,
 .lights {
 	background: $black url(../images/lights.png) repeat-y 50% -470px;
 	padding-bottom: 150px;
+	.lt-ie9 & {
+		background-color: $green;
+	}
 }
 
 .fade {
