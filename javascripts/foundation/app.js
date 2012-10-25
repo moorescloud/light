@@ -117,6 +117,16 @@
 		$('.slid').slideDown('slow').removeClass('slid');
     });
     
+    // Parallax
+    $(window).bind('scroll', function(e){
+	    // parallaxScroll(); Whew, HOT!
+	});
+	 
+	function parallaxScroll(){
+	    var scrolled = $(window).scrollTop();
+	    $('.lights').css('background-position-y', (0 + (scrolled * .5) + 'px'));
+	}
+    
 	
 	// C’est Fin!
 	
