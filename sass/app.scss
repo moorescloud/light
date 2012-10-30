@@ -64,6 +64,11 @@ body,
 	padding: 10px 40px 20px;
 	background: rgba(0, 0, 0, .8);
 	@include border-radius(10px);
+	.lt-ie9 & {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000); 
+		zoom: 1;
+	}
 }
 
 .panel.callout {
@@ -72,6 +77,11 @@ body,
 	padding-bottom: 0;
 	background: none;
 	@include box-shadow(none);
+	.lt-ie9 & {
+		background: transparent;
+		filter: inherit;
+		zoom: 1;
+	}
 }
 
 /* Typography */
@@ -110,13 +120,16 @@ body, p {
 	text-align: right;
 	font-size: 2rem;
 	@include text-shadow (rgba($white, .35) 1px 1px 0);
+	.lt-ie9 & {
+		font-size: 20px;
+	}
 }
 
 /* Links */
 
 a {
 	color: $white;
-	@include transition-property(color);
+	@include transition-property(all);
 	@include transition-duration(.25s);
 	@include transition-timing-function(linear);
 	&:hover {
@@ -157,6 +170,9 @@ p.slip, p.slide {
 			-o-animation: lightcloud 10s infinite 1s alternate;
 			animation: lightcloud 10s infinite 1s alternate;
 			-webkit-transform: rotateZ(0deg);
+			.lt-ie9 & {
+				background-color: $green;
+			}
 		}
 	}
 	#down {
@@ -173,14 +189,15 @@ p.slip, p.slide {
 				color: $greylight;
 				text-decoration: none;
 			}
+			.lt-ie9 & {
+				font-size: 40px;
+			}
 		}
 	}
 	.orbit {
 		margin-bottom: 0;
 	}
 }
-
-
 
 /* Nav */
 
@@ -250,6 +267,7 @@ p.slip, p.slide {
 	min-height: 350px;
 	position: relative;
 	img {
+		border: none;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -296,12 +314,51 @@ p.slip, p.slide {
 .contact .social span {
 	font-size: 4rem;
 	a {
-		padding: 7px 5px;
+		padding: 15px 5px;
 		color: $greylight;
 		float: right;
 		&:hover {
 			color: $white;
 		}
+	}
+	.lt-ie9 & {
+		font-size: 40px;
+	}
+}
+
+/* Reveal Modal */
+
+.modal {
+	.ss-icon {
+		font-size: 2rem;
+		color: $greylight;
+		float: right;
+		@include transition-property(all);
+		@include transition-duration(.25s);
+		@include transition-timing-function(linear);
+	}
+	&:hover {
+		.ss-icon {
+			color: $white;
+		}
+	}
+}
+
+.reveal-modal {
+	background: transparent;
+	@include box-shadow(inherit);
+}
+
+.reveal-modal-bg {
+	background: rgb(0, 0, 0);
+	background: rgba($black, .75);
+}
+
+.close-reveal-modal.ss-icon {
+	color: $white;
+	@include text-shadow(none);
+	&:hover {
+		text-decoration: none;
 	}
 }
 

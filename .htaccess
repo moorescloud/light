@@ -1,0 +1,8 @@
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^moorescloud.com$ [NC]
+RewriteRule ^(.*)$ http://moorescloud.com/$1 [L,R=301]
+
+Redirect 301 /kickstarter.html http://www.kickstarter.com/projects/cloudlight/light-1
+Redirect 301 /kickstarter http://www.kickstarter.com/projects/cloudlight/light-1
